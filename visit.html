@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content="college, campus, university, cost calculator, tuition, Hackney University">
+      <meta name="description" content="Hackney University Cost Calculator">
+      <meta name="author" content="Hackney University">
+      <title>Campus Overview | Hackney University</title>
+    
+      <!-- Favicons-->
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+      <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+      <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+      <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+      <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+    
+      <!-- BASE CSS -->
+      <link href="css/main_font/main_font.css" rel="stylesheet">
+      <link href="css/animate.min.css" rel="stylesheet">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/menu.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/responsive.css" rel="stylesheet">
+      <link href="css/elegant_font/elegant_font.min.css" rel="stylesheet">
+      <link href="css/icon_font/pe-icon-7-stroke.min.css" rel="stylesheet">
+      <link href="css/fontello/css/fontello.min.css" rel="stylesheet">
+      <link href="css/edu_fonts/edu_fonts.min.css" rel="stylesheet">
+      <link href="css/magnific-popup.css" rel="stylesheet">
+    
+      <!-- CUSTOM CSS -->
+      <link href="css/custom.css" rel="stylesheet">
+      
+      <style>
+        /* Additional styling for our cost calculator page */
+        .cost-result { background: #f8f8f8; border: 1px solid #ddd; padding: 20px; margin-top: 20px; }
+        .cost-result h3 { margin-top: 0; }
+        .form-group { margin-bottom: 20px; }
+      </style>
+    </head>
+    
+    <body>
+    
+    <div id="preloader">
+      <div class="pulse"></div>
+    </div>
+    <!-- End Preloader -->
+    
+    <!-- Header (using Hackney University template) -->
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-3">
+            <div id="logo">
+              <a href="index.html"><img src="img/svg/hackneylogo_white.svg" height="40" alt="Hackney University" data-retina="true"></a>
+            </div>
+          </div>
+          <nav class="col-md-9 col-sm-9 col-xs-9">
+            <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Mobile Menu</span></a>
+            <div class="main-menu">
+              <div id="header_menu">
+                <img src="img/logo_mobile.png" width="125" height="40" alt="Hackney University" data-retina="true">
+              </div>
+              <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
+              <ul>
+                <li class="submenu">
+                  <a href="javascript:void(0);" class="show-submenu">Academics <i class="icon-down-open-mini"></i></a>
+                  <ul>
+                    <li><a href="undergraduate.html">Undergraduate Programs</a></li>
+                    <li><a href="graduate.html">Graduate Programs</a></li>
+                    <li><a href="online.html">Online Learning</a></li>
+                    <li><a href="non_degree.html">Non-Degree Programs</a></li>
+                    <li><a href="calendar.html">Academic Calendar</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a href="javascript:void(0);" class="show-submenu">Admission <i class="icon-down-open-mini"></i></a>
+                  <ul>
+                    <li><a href="apply_online.html">Apply Online</a></li>
+                    <li><a href="tuition.html">Tuition</a></li>
+                    <li><a href="financial_aid.html">Financial Aid</a></li>
+                    <li><a href="international.html">International Students</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a href="javascript:void(0);" class="show-submenu">Campus <i class="icon-down-open-mini"></i></a>
+                  <ul>
+                    <li><a href="campus.html">Overview</a></li>
+                    <li><a href="tour.html">Virtual Tour</a></li>
+                    <li><a href="visit.html">Plan a Visit</a></li>
+                    <li><a href="campus_life.html">Campus Life</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a href="javascript:void(0);" class="show-submenu">About <i class="icon-down-open-mini"></i></a>
+                  <ul>
+                    <li><a href="about.html">Our Mission &amp; Vision</a></li>
+                    <li><a href="history.html">History &amp; Legacy</a></li>
+                    <li><a href="leadership.html">Leadership</a></li>
+                    <li><a href="faculty.html">Faculty &amp; Staff</a></li>
+                    <li><a href="chancellor_message.html">Chancellor&apos;s Message</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
+                <li><a href="#search" id="search_bt"><i class="icon-search"></i><span>Search</span></a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- End row -->
+      </div>
+      <!-- End container-fluid -->
+    </header>
+    <!-- End Header -->
+    
+    <!-- Sub Header -->
+    <div class="sub_header bg_1">
+      <div id="intro_txt">
+        <h1>Plan A Visit</h1>
+        <p>Immerse yourself in the Hackney University Experience</p>
+      </div>
+    </div>
+    <!-- End Sub Header -->
+
+    <!-- Breadcrumb -->
+    <div id="position">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li>Plan A Visit</li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- MAIN CONTENT -->
+    <div class="container_gray_bg">
+      <div class="container margin_60">
+        <!-- Introduction & Detailed Information Section -->
+        <div class="row visit-info">
+          <div class="col-md-12">
+            <h2>Welcome, Future Visitors &amp; Families!</h2>
+            <p>
+              At Hackney University, we understand that a campus visit is not just a tour – it is an immersive experience. Our visit days are designed to offer you a full picture of campus life, from interactive sessions with faculty to hands-on demonstrations in our cutting-edge labs, and even leisurely strolls through our historic quads.
+            </p>
+            <p>
+              Whether you're exploring your future academic home or seeking inspiration for a family day out, our friendly staff and detailed tour itineraries ensure you get the most out of your visit.
+            </p>
+            <p>
+              Enjoy exclusive campus insights, relaxed meet-and-greets with current students, and indulge in the senses with beautifully landscaped grounds and inspiring architecture.
+            </p>
+          </div>
+        </div>
+        <!-- End Introduction -->
+
+        <hr>
+
+        <!-- Common Visit Times Accordion -->
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Popular Visit Periods</h2>
+            <div class="panel-group" id="visitTimesAccordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#visitTimesAccordion" href="#springVisit">
+                      Spring Open House <i class="indicator icon_minus_alt2 pull-right"></i>
+                    </a>
+                  </h4>
+                </div>
+                <div id="springVisit" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <img src="https://picsum.photos/seed/spring/800/400" alt="Spring Visit" class="img-responsive">
+                    <p>
+                      Each March, our Spring Open House invites prospective students and families to explore our campus through interactive sessions, mini-lectures, and guided tours amid blooming landscapes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#visitTimesAccordion" href="#summerVisit">
+                      Summer Experience Days <i class="indicator icon_plus_alt2 pull-right"></i>
+                    </a>
+                  </h4>
+                </div>
+                <div id="summerVisit" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <img src="https://picsum.photos/seed/summer/800/400" alt="Summer Visit" class="img-responsive">
+                    <p>
+                      In June and July, enjoy outdoor events, sports demonstrations, and casual Q&amp;A sessions that capture the lively essence of our campus during the golden summer months.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#visitTimesAccordion" href="#fallVisit">
+                      Fall Preview &amp; Orientation <i class="indicator icon_plus_alt2 pull-right"></i>
+                    </a>
+                  </h4>
+                </div>
+                <div id="fallVisit" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <img src="https://picsum.photos/seed/fall/800/400" alt="Fall Visit" class="img-responsive">
+                    <p>
+                      September brings the buzz of new beginnings. Our Fall Preview Days combine academic presentations with campus tours to provide clarity as you step into the upcoming academic year.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Accordion -->
+          </div>
+        </div>
+        <!-- End Common Visit Times -->
+
+        <hr>
+
+        <!-- Schedule Your Visit Form Section -->
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="visit-form">
+              <h2>Schedule Your Campus Visit</h2>
+              <p>Fill out the form below to request a personalized campus tour. One of our friendly representatives will contact you soon to finalize your visit details.</p>
+              <form action="assets/visit_schedule.php" method="post">
+                <div class="form-group">
+                  <label for="visitor_name">Full Name</label>
+                  <input type="text" class="form-control" id="visitor_name" name="visitor_name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                  <label for="visitor_email">Email Address</label>
+                  <input type="email" class="form-control" id="visitor_email" name="visitor_email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone_number">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone_number" name="phone_number" placeholder="(555) 555-5555">
+                </div>
+                <div class="form-group">
+                  <label for="visit_date">Preferred Visit Date</label>
+                  <input type="date" class="form-control" id="visit_date" name="visit_date" required>
+                </div>
+                <div class="form-group">
+                  <label for="visitor_message">Questions / Requests</label>
+                  <textarea class="form-control" id="visitor_message" name="visitor_message" rows="5" placeholder="Let us know any special arrangements or questions"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Submit Your Request</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- End Schedule Form -->
+
+        <hr>
+
+        <!-- Itinerary & Travel Information Tabs -->
+        <div class="row visit-details">
+          <div class="col-md-12">
+            <h2>Your Visit Itinerary &amp; Travel Tips</h2>
+            <p>Explore a suggested itinerary and get insider information on how best to make your way to campus.</p>
+            <!-- Nav Tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#itinerary" aria-controls="itinerary" role="tab" data-toggle="tab">Itinerary</a></li>
+              <li role="presentation"><a href="#travel-tips" aria-controls="travel-tips" role="tab" data-toggle="tab">Travel Tips</a></li>
+              <li role="presentation"><a href="#parking" aria-controls="parking" role="tab" data-toggle="tab">Parking &amp; Transit</a></li>
+            </ul>
+            <!-- Tab Content -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="itinerary">
+                <h3>Suggested Day-Long Campus Tour</h3>
+                <p>Start your day with a welcome reception at the admissions center followed by guided tours of academic buildings and research labs. Enjoy refreshments at the student commons before exploring the scenic outdoor spaces.</p>
+                <table class="table table-striped content-table">
+                  <thead>
+                    <tr>
+                      <th>Time</th>
+                      <th>Activity</th>
+                      <th>Location</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>9:00 AM</td>
+                      <td>Welcome &amp; Orientation</td>
+                      <td>Admissions Center</td>
+                    </tr>
+                    <tr>
+                      <td>10:00 AM</td>
+                      <td>Academic Building Tour</td>
+                      <td>Main Quad</td>
+                    </tr>
+                    <tr>
+                      <td>12:00 PM</td>
+                      <td>Lunch &amp; Campus Commons</td>
+                      <td>Student Center</td>
+                    </tr>
+                    <tr>
+                      <td>2:00 PM</td>
+                      <td>Research Lab &amp; Facilities Visit</td>
+                      <td>Science Wing</td>
+                    </tr>
+                    <tr>
+                      <td>4:00 PM</td>
+                      <td>Q&amp;A Session with Faculty</td>
+                      <td>Library Auditorium</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="travel-tips">
+                <h3>Travel &amp; Local Area Tips</h3>
+                <p>Need help getting here? Hackney University is conveniently located near major highways and public transit lines.</p>
+                <ul class="list_style_1">
+                  <li>Rental car services and taxi stands available at the main entrance.</li>
+                  <li>Bus routes connect from downtown hubs to our campus.</li>
+                  <li>Local accommodations offer special rates for visiting families.</li>
+                  <li>Explore energy efficient shuttle services on-campus.</li>
+                </ul>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="parking">
+                <h3>Parking &amp; Public Transit</h3>
+                <p>Our campus provides ample parking facilities along with dedicated drop-off zones and public transit stops:</p>
+                <ol>
+                  <li><strong>Visitor Parking:</strong> Located in the North Lot with complimentary 3-hour parking.</li>
+                  <li><strong>Campus Shuttles:</strong> Available to transport visitors from designated parking areas.</li>
+                  <li><strong>Nearby Transit:</strong> Connect easily via regional bus services; check our <a href="contacts.html">contact page</a> for schedules.</li>
+                </ol>
+              </div>
+            </div><!-- End Tab Content -->
+          </div>
+        </div>
+        <!-- End Itinerary & Travel Information Tabs -->
+
+        <hr>
+
+        <!-- Virtual Tour & Call to Action Section -->
+        <div class="row tour-callout">
+          <div class="col-md-12">
+            <h2>Can’t Visit In Person?</h2>
+            <p>
+              Experience our campus virtually with our immersive 360° tour. Click below to start your virtual exploration, and when you’re ready for more detailed insights, visit our Campus Overview or About Us pages.
+            </p>
+            <a href="tour.html" class="btn btn-info btn-lg">Start Virtual Tour</a>
+            <a href="campus.html" class="btn btn-warning btn-lg">Campus Overview</a>
+            <a href="about.html" class="btn btn-success btn-lg">Learn About Us</a>
+          </div>
+        </div>
+        <!-- End Virtual Tour CTA -->
+
+        <hr>
+
+        <!-- Visitor Gallery with Slideshow and Popup Images -->
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Visitor Gallery</h2>
+            <p>Enjoy a curated collection of photos captured during recent campus visits. Click any image to view in full screen.</p>
+          </div>
+          <div class="col-md-4">
+            <a class="magnific-popup" href="https://picsum.photos/seed/visit_gallery1/1000/800">
+              <img src="https://picsum.photos/seed/visit_gallery1/600/400" alt="Campus Walkway" class="img-responsive" style="margin-bottom:20px;">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="magnific-popup" href="https://picsum.photos/seed/visit_gallery2/1000/800">
+              <img src="https://picsum.photos/seed/visit_gallery2/600/400" alt="Engaged Tour Groups" class="img-responsive" style="margin-bottom:20px;">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="magnific-popup" href="https://picsum.photos/seed/visit_gallery3/1000/800">
+              <img src="https://picsum.photos/seed/visit_gallery3/600/400" alt="Historical Building Exterior" class="img-responsive" style="margin-bottom:20px;">
+            </a>
+          </div>
+        </div>
+        <!-- End Visitor Gallery -->
+
+        <hr>
+
+        <!-- Testimonials Carousel Section -->
+        <div class="row testimonial-section">
+          <div class="col-md-12">
+            <h2>What Our Visitors Are Saying</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+                <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <blockquote class="styled">
+                    <p>"Visiting Hackney University was an unforgettable experience. The tour gave me a deep insight into both the academic excellence and the vibrant community."</p>
+                    <small>Sarah, Prospective Student</small>
+                  </blockquote>
+                </div>
+                <div class="item">
+                  <blockquote class="styled">
+                    <p>"My family and I enjoyed the visit day immensely. The campus is beautiful, and the guided tour was informative and engaging."</p>
+                    <small>John, Parent</small>
+                  </blockquote>
+                </div>
+                <div class="item">
+                  <blockquote class="styled">
+                    <p>"The interactive itinerary made it easy to explore every corner of the campus. I felt truly welcomed and inspired."</p>
+                    <small>Alex, Future Graduate Student</small>
+                  </blockquote>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#testimonialCarousel" data-slide="prev">
+                <i class="icon-left-open"></i>
+              </a>
+              <a class="right carousel-control" href="#testimonialCarousel" data-slide="next">
+                <i class="icon-right-open"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- End Testimonials Carousel -->
+
+        <hr>
+
+        <!-- Google Map & Directions Section -->
+        <div class="row" id="map-section">
+          <div class="col-md-6">
+            <h2>Find Us On Campus</h2>
+            <div id="googleMap" style="width:100%; height:400px;"></div>
+          </div>
+          <div class="col-md-6">
+            <h2>Get Directions</h2>
+            <form id="directionsForm">
+              <div class="form-group">
+                <label for="start">Enter Your Starting Location</label>
+                <input id="start" type="text" class="form-control" placeholder="Your Address">
+              </div>
+              <button id="submitDirections" class="btn btn-primary btn-lg" type="submit">Calculate Route</button>
+            </form>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Campus FAQs Accordion Section -->
+        <div class="row" id="campusFAQs">
+          <div class="col-md-12">
+            <h2>Frequently Asked Questions</h2>
+            <div class="panel-group" id="FAQAccordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#FAQAccordion" href="#faq1">
+                      What parking facilities are available on campus? <i class="indicator icon_plus_alt2 pull-right"></i>
+                    </a>
+                  </h4>
+                </div>
+                <div id="faq1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Our campus offers multiple visitor parking options with ample space. Complimentary 3-hour parking is available in designated lots and campus shuttles are provided to transport you from the parking area to your destination.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#FAQAccordion" href="#faq2">
+                      How early should I arrive for my scheduled visit? <i class="indicator icon_plus_alt2 pull-right"></i>
+                    </a>
+                  </h4>
+                </div>
+                <div id="faq2" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    We recommend arriving at least 15 minutes before your scheduled tour to allow time for parking and check-in.
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#FAQAccordion" href="#faq3">
+                      Are group tours available for families and organizations? <i class="indicator icon_plus_alt2 pull-right"></i>
+                    </a>
+                  </h4>
+                </div>
+                <div id="faq3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Yes, we offer group tours for families, school groups, and organizations. Please contact our admissions office to arrange a personalized group tour.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+      </div><!-- End container margin_60 -->
+    </div><!-- End Main Content (container_gray_bg) -->
+
+    <!-- NEWSLETTER SECTION -->
+    <div class="container_gray_line" id="newsletter_container">
+      <div class="container margin_60">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <h3>Subscribe to our Newsletter for the Latest News</h3>
+            <div id="message-newsletter"></div>
+            <form method="post" action="assets/newsletter.php" name="newsletter" id="newsletter" class="form-inline">
+              <input name="email_newsletter" id="email_newsletter" type="email" placeholder="Your Email" class="form-control">
+              <button id="submit-newsletter" class="button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END NEWSLETTER SECTION -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-3 col-sm-3">
+            <p id="logo_footer">
+              <img src="img/logo.png" width="125" height="40" alt="Hackney University" data-retina="true">
+            </p>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <h4>About</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <h4>Academic</h4>
+            <ul>
+              <li><a href="study_plans.html">Plans of Study</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="admissions.html">Admissions</a></li>
+              <li><a href="staff.html">Staff</a></li>
+              <li><a href="students.html">Students</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="visit.html">Plan A Visit</a></li>
+            </ul>
+            <ul id="contacts_footer">
+              <li>Info line - <a href="tel://033284322">+0332 84322456</a></li>
+              <li>Email - <a href="mailto:info@hackneyuniversity.org">info@hackneyuniversity.org</a> / <a href="#">office@hackneyuniversity.org</a></li>
+            </ul>
+          </div>
+        </div><!-- End row -->
+      </div><!-- End container -->
+    </footer>
+    <!-- END FOOTER -->
+
+    <div id="copy">
+      <div class="container">
+         &copy; <a href="https://taofruit.com" target="_blank">Tao Fruit</a> - All rights reserved.
+      </div>
+    </div>
+    <!-- END Copy -->
+
+    <!-- LOGIN MODAL -->   
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myLogin" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content modal-popup">
+          <a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
+          <form action="#" class="popup-form" id="myLogin">
+            <input type="text" class="form-control form-white" placeholder="Username">
+            <input type="text" class="form-control form-white" placeholder="Password">
+            <div class="checkbox-holder text-left">
+              <div class="checkbox">
+                <input type="checkbox" value="accept_1" id="check_1" name="check_1"/>
+                <label for="check_1"><span>I Agree to the <strong>Terms &amp; Conditions</strong></span></label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- END LOGIN MODAL -->
+
+    <!-- REGISTER MODAL -->   
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myRegister" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content modal-popup">
+          <a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
+          <form action="#" class="popup-form" id="myRegister">
+            <input type="text" class="form-control form-white" placeholder="Name">
+            <input type="text" class="form-control form-white" placeholder="Last Name">
+            <input type="email" class="form-control form-white" placeholder="Email">
+            <input type="text" class="form-control form-white" placeholder="Password">
+            <div class="checkbox-holder text-left">
+              <div class="checkbox">
+                <input type="checkbox" value="accept_2" id="check_2" name="check_2"/>
+                <label for="check_2"><span>I Agree to the <strong>Terms &amp; Conditions</strong></span></label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-submit">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- END REGISTER MODAL -->
+
+    <!-- SEARCH MODAL -->   
+    <div id="search">
+      <button type="button" class="close">×</button>
+      <form>
+        <input type="search" value="" placeholder="Type keyword(s) here">
+        <button type="submit" class="button">Search</button>
+      </form>
+    </div>
+    <!-- END SEARCH MODAL -->
+
+    <!-- COMMON SCRIPTS -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/common_scripts_min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="assets/validate.js"></script>
+    <!-- Initialize Magnific Popup for Image Gallery & Video Tour -->
+    <script>
+      $(document).ready(function(){
+        $('.magnific-popup').magnificPopup({type:'image'});
+        $('.video_pop').magnificPopup({type:'iframe'});
+      });
+    </script>
+    
+    <!-- Google Maps API (replace YOUR_API_KEY with your actual API key) -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=IzaSyAAXnMD6sk_unSV6cVO-gnOzDK5lOpIU28&callback=initMap"></script>
+    <script>
+      function initMap() {
+        // Center the map at Hackney University (example coordinates)
+        var campus = {lat: 40.7128, lng: -74.0060};
+        var map = new google.maps.Map(document.getElementById('googleMap'), {
+          zoom: 14,
+          center: campus
+        });
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        directionsDisplay.setMap(map);
+
+        // Submit directions form on button click
+        document.getElementById('directionsForm').addEventListener('submit', function(e) {
+          e.preventDefault();
+          calculateAndDisplayRoute(directionsService, directionsDisplay);
+        });
+      }
+
+      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        var start = document.getElementById('start').value;
+        var campus = {lat: 40.7128, lng: -74.0060};
+        directionsService.route({
+          origin: start,
+          destination: campus,
+          travelMode: 'DRIVING'
+        }, function(response, status) {
+          if (status === 'OK') {
+            directionsDisplay.setDirections(response);
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
+    </script>
+
+  </body>
+</html>
