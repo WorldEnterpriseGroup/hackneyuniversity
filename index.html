@@ -45,92 +45,108 @@
 
     <!-- Header================================================== -->
     <header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-3">
-                <div id="logo">
-                    <a href="index.html"><img src="img/svg/hackneylogo_white.svg"  height="40" alt="Atena" data-retina="true"></a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div id="logo">
+                        <a href="index.html"><img src="img/svg/hackneylogo_white.svg" height="40" alt="Hackney University" data-retina="true"></a>
+                    </div>
                 </div>
+                <nav class="col-md-9 col-sm-9 col-xs-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Mobile Menu</span></a>
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <img src="img/logo_mobile.png" width="125" height="40" alt="Hackney University" data-retina="true">
+                        </div>
+                        <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
+                        <ul>
+                            <!-- Programs Menu -->
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Academics <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="undergraduate.html">Undergraduate Programs</a></li>
+                                    <li><a href="graduate.html">Graduate Programs</a></li>
+                                    <li><a href="online.html">Online Learning</a></li>
+                                    <li><a href="non_degree.html">Non-Degree Programs</a></li>
+                                    <li><a href="calendar.html">Academic Calendar</a></li>
+                                </ul>
+                            </li>
+                            <!-- About Us Menu -->
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Admission <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="apply_online.html">Apply Online</a></li>
+                                    <li><a href="tuition.html">Tuition</a></li>
+                                    <li><a href="financial_aid.html">Financial Aid</a></li>
+                                    <li><a href="international.html">International Students</a></li>
+                                </ul>
+                            </li>
+                            <!-- Research & Innovation Megamenu -->
+                            <li class="megamenu submenu">
+                                <a href="javascript:void(0);" class="show-submenu-mega">Research <i class="icon-down-open-mini"></i></a>
+                                <div class="menu-wrapper">
+                                    <div class="col-md-4">
+                                        <h3>Artificial Intelligence</h3>
+                                        <ul>
+                                            <li><a href="ai_center.html"><i class="icon-rocket"></i> AI Research Center</a></li>
+                                            <li><a href="ml_lab.html"><i class="icon-rocket"></i> Machine Learning Lab</a></li>
+                                            <li><a href="robotics.html"><i class="icon-rocket"></i> Robotics &amp; Automation</a></li>
+                                            <li><a href="ai_ethics.html"><i class="icon-rocket"></i> AI Ethics Initiative</a></li>
+                                            <li><a href="data_science.html"><i class="icon-rocket"></i> Data Science Collaborative</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3>Futurism &amp; Technology</h3>
+                                        <ul>
+                                            <li><a href="futurism.html"><i class="icon-rocket"></i> Futurism Research</a></li>
+                                            <li><a href="space_tech.html"><i class="icon-rocket"></i> Space Technologies</a></li>
+                                            <li><a href="sustainability.html"><i class="icon-rocket"></i> Sustainability Projects</a></li>
+                                            <li><a href="innovation_hub.html"><i class="icon-rocket"></i> Innovation Hub</a></li>
+                                            <li><a href="emerging_tech.html"><i class="icon-rocket"></i> Emerging Technologies</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3>Business &amp; Incubation</h3>
+                                        <ul>
+                                            <li><a href="startup_incubator.html"><i class="icon-rocket"></i> Startup Incubator</a></li>
+                                            <li><a href="business_accelerator.html"><i class="icon-rocket"></i> Business Accelerator</a></li>
+                                            <li><a href="entrepreneurship.html"><i class="icon-rocket"></i> Entrepreneurship Program</a></li>
+                                            <li><a href="industry_partnerships.html"><i class="icon-rocket"></i> Industry Partnerships</a></li>
+                                            <li><a href="kardashev_projects.html"><i class="icon-rocket"></i> Kardashev Scale Projects</a></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- End menu-wrapper -->
+                            </li>
+                            <!-- Campus Menu -->
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Campus <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="campus.html">Overview</a></li>
+                                    <li><a href="campus_tour.html">Virtual Tour</a></li>
+                                    <li><a href="visit.html">Plan a Visit</a></li>
+                                    <li><a href="campus_life.html">Campus Life</a></li>
+                                </ul>
+                            </li>
+                            <!-- About Us Menu -->
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">About <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="about.html">Our Mission &amp; Vision</a></li>
+                                    <li><a href="history.html">History &amp; Legacy</a></li>
+                                    <li><a href="leadership.html">Leadership</a></li>
+                                    <li><a href="faculty.html">Faculty &amp; Staff</a></li>
+                                    <li><a href="chancellor_message.html">Chancellor&amp;s Message</a></li>
+                                </ul>
+                            </li>
+                            <!-- Login Modal -->
+                            <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
+                            <!-- Search -->
+                            <li><a href="#search" id="search_bt"><i class="icon-search"></i><span>Search</span></a></li>
+                        </ul>
+                    </div><!-- End main-menu -->
+                </nav>
             </div>
-            <nav class="col-md-9 col-sm-9 col-xs-9">
-            <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
-            <div class="main-menu">
-                <div id="header_menu">
-                    <img src="img/logo_mobile.png" width="125" height="40" alt="Atena" data-retina="true">
-                </div>
-                <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
-                <ul>
-                    <li class="submenu">
-                    <a href="javascript:void(0);" class="show-submenu">Home <i class="icon-down-open-mini"></i></a>
-                    <ul>
-                        <li><a href="index.html">Home Layer slider</a></li>
-                        <li><a href="index_2.html">Home Video</a></li>
-                        <li><a href="index_3.html">Home version 2</a></li>
-                        <li><a href="index_4.html">Home version 3</a></li>
-                        <li><a href="index_5.html">Home quick contact</a></li>
-                    </ul>
-                    </li>
-                    <li class="submenu">
-                    <a href="javascript:void(0);" class="show-submenu">Academic <i class="icon-down-open-mini"></i></a>
-                    <ul>
-                        <li><a href="diploma.html">Diploma courses</a></li>
-                        <li><a href="graduate.html">Graduate courses</a></li>
-                        <li><a href="master.html">Master courses</a></li>
-                        <li><a href="apply_online.html">Apply online</a></li>
-                        <li><a href="staff.html">Staff</a></li>
-                    </ul>
-                    </li>
-                    <li class="submenu">
-                    <a href="javascript:void(0);" class="show-submenu">About <i class="icon-down-open-mini"></i></a>
-                    <ul>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="contacts.html">Plan a visit</a></li>
-                        <li><a href="staff.html">Staff</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                    </li>
-                    <li class="megamenu submenu">
-                    <a href="javascript:void(0);" class="show-submenu-mega">Pages &amp; elements<i class="icon-down-open-mini"></i></a>
-                    <div class="menu-wrapper">
-                        <div class="col-md-4">
-                            <h3>Elements</h3>
-                            <ul>
-                                <li><a href="icon-pack-1.html"><i class="icon-inbox-alt"></i> Icon pack 1</a></li>
-                                <li><a href="icon-pack-2.html"><i class="icon-inbox-alt"></i> Icon pack 2</a></li>
-                                <li><a href="icon-pack-3.html"><i class="icon-inbox-alt"></i> Icon pack 3</a></li>
-                                <li><a href="icon-pack-4.html"><i class="icon-inbox-alt"></i> Icon pack 4</a></li>
-                                <li><a href="shortcodes.html"><i class="icon-tools"></i> Shortcodes</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h3>Pages</h3>
-                            <ul>
-                            	<li><a href="academic_single_course.html">Single course page</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contacts.html">Contacts</a></li>
-                                <li><a href="agenda_calendar.html">Agenda calendar</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h3>Pages</h3>
-                            <ul>
-                                <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
-                                <li><a href="#" data-toggle="modal" data-target="#register">Register</a></li>
-                                <li><a href="tour.html">Tour</a></li>
-                                <li><a href="site_launch/index.html">Site launch/Coming soon</a></li>
-                            </ul>
-                        </div>
-                    </div><!-- End menu-wrapper -->
-                    </li>
-                    <li><a href="tour.html">Tour</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
-                    <li><a href="#search" id="search_bt"><i class=" icon-search"></i><span>Search</span></a></li>
-                </ul>
-            </div><!-- End main-menu -->
-            </nav>
-        </div>
-    </div><!-- container -->
+        </div><!-- End container -->
     </header><!-- End Header -->
 
 	<div id="full-slider-wrapper">
@@ -204,21 +220,21 @@
     <div class="container margin_60">
     <div class="main_title">
     <h2>Hackney University Feautures</h2>
-    <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+    <p>Our commitment to excellence is evident in every aspect of campus life.</p>
     </div>
     	<div class="row">
         	<div class="col-md-6 col-sm-6">
             	<div class="box_feat_home">
                 	<i class=" iconcustom-certificate"></i>
                 	<h3>Quality Certifications</h3>
-                    <p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
+                    <p>Hackney University’s certifications are recognized globally, ensuring that your achievements open doors to endless opportunities in today’s competitive landscape. Our curriculum meets industry standards and prepares you for real‐world success.</p>
                 </div>
             </div>
             <div class="col-md-6 col-sm-6">
             	<div class="box_feat_home">
                 	<i class=" iconcustom-innovation"></i>
                 	<h3>Learning Best Practice</h3>
-                    <p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
+                    <p>At Hackney, innovative teaching and modern learning methodologies come together to create an environment where best practices are not only taught but lived. Experience a dynamic classroom that fosters discovery and active engagement.</p>
                 </div>
             </div>
         </div><!-- End row -->
@@ -227,14 +243,14 @@
             	<div class="box_feat_home">
                 	<i class=" iconcustom-education_online"></i>
                 	<h3>Online Resources</h3>
-                    <p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
+                    <p>Access an extensive array of digital resources and interactive tools designed to support your academic journey, making learning both flexible and engaging.</p>
                 </div>
             </div>
             <div class="col-md-6 col-sm-6">
             	<div class="box_feat_home">
                 	<i class=" iconcustom-know_how"></i>
                 	<h3>Study Plan Tutors</h3>
-                    <p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
+                    <p>Benefit from personalized guidance and expert mentorship from our experienced faculty. Our dedicated tutors work closely with you to design a study plan that aligns with your career goals.</p>
                 </div>
             </div>
         </div><!-- End row -->
@@ -243,14 +259,14 @@
             	<div class="box_feat_home">
                 	<i class=" iconcustom-science"></i>
                 	<h3>Advanced Practice</h3>
-                    <p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
+                    <p>Immerse yourself in advanced courses and hands-on sessions that refine your skills, ensuring you're equipped for innovative research and professional success.</p>
                 </div>
             </div>
             <div class="col-md-6 col-sm-6">
             	<div class="box_feat_home">
                 	<i class=" iconcustom-test"></i>
                 	<h3>Research</h3>
-                    <p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.</p>
+                    <p>Join our vibrant research community where groundbreaking ideas are transformed into practical solutions. At Hackney University, pioneering research is part of our legacy.</p>
                 </div>
             </div>
         </div><!-- End row -->
@@ -259,22 +275,26 @@
         <div class="row add_bottom_60">
             <div class="main_title">
             <h2>Hackney University focuses on these ....</h2>
-            <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+            <p>We empower students with a dynamic learning environment and a future‐focused vision.</p>
             </div>
         	<div class="col-md-6 col-md-offset-3">
             <div id="graph">
             <img src="img/graphic.jpg" class="wow zoomIn" data-wow-delay="0.1s" alt="">
             	<div class="features step_1 wow flipInX" data-wow-delay="1s">
-            	<h4><strong>01.</strong> Students growth</h4><p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.</p>
+            	<h4><strong>01.</strong> Students growth</h4>
+                <p>Our commitment to student success is reflected in continuous growth opportunities, empowering each individual to flourish academically and professionally.</p>
                 </div>
                 <div class="features step_2 wow flipInX" data-wow-delay="1.5s">
-                <h4><strong>02.</strong> Best learning practice</h4><p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.</p>
+                <h4><strong>02.</strong> Best learning practice</h4>
+                <p>We integrate cutting-edge educational techniques and real-world insights, crafting a learning environment that instills lifelong skills and a passion for innovation.</p>
                 </div>
                 <div class="features step_3 wow flipInX" data-wow-delay="2s">
-                <h4><strong>03.</strong> Focus on targets</h4><p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.</p>
+                <h4><strong>03.</strong> Focus on targets</h4>
+                <p>At Hackney, we set clear goals and milestones to inspire determination and track progress, ensuring every student excels and achieves their dreams.</p>
                 </div>
                 <div class="features step_4 wow flipInX" data-wow-delay="2.5s">
-                <h4><strong>04.</strong> Interdisciplanary model</h4><p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex.</p>
+                <h4><strong>04.</strong> Interdisciplanary model</h4>
+                <p>Our innovative interdisciplinary approach fosters collaboration across various fields, sparking creativity and developing holistic problem-solving skills.</p>
                 </div>
                 </div>
                 </div>
@@ -297,7 +317,7 @@
                             <div class="item active">
                                 <blockquote>
                                     <p>
-                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.
+                                         Studying at Hackney University transformed my perspective. The dedicated faculty and modern campus infrastructure empowered me to achieve my dreams, both academically and professionally.
                                     </p>
                                 </blockquote>
                                <small><img class="img-circle" src="img/testimonial_1.jpg" alt="">Stefany</small>
@@ -306,7 +326,7 @@
                             <div class="item">
                                 <blockquote>
                                     <p>
-                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.
+                                         Hackney University is more than an institution; it’s a community where innovation meets tradition. My experience here prepared me for real-world challenges with confidence and clarity.
                                     </p>
                                 </blockquote>
                                  <small><img class="img-circle" src="img/testimonial_2.jpg" alt="">Karla</small>
@@ -315,7 +335,7 @@
                             <div class="item">
                                 <blockquote>
                                     <p>
-                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.
+                                         The support and opportunities at Hackney University are truly unmatched. I've gained invaluable skills and lifelong connections that continue to shape my success.
                                     </p>
                                 </blockquote>
                                 <small><img class="img-circle" src="img/testimonial_1.jpg" alt="">Maira</small>
@@ -329,7 +349,7 @@
     <div class="container margin_60">
           <div class="main_title">
     <h2>Latest from Hackney ....</h2>
-    <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+    <p>Discover our dynamic projects, inspiring stories, and upcoming events.</p>
     </div>
     <div id="tabs" class="tabs">
 				<nav>
@@ -423,21 +443,21 @@
                             <p><a href="#0"><img src="img/news_1_thumb.jpg" alt="" class="img-responsive"></a></p>
                                   <span class="date_published">20 Agusut 2022</span>
 <h3><a href="#0">Success Stories for Hackney University in 2022's </a></h3>
-                            <p>Lorem ipsum dolor sit amet, ei tincidunt persequeris efficiantur vel, usu animal patrioque omittantur et. Timeam nostrud platonem nec ea, simul nihil delectus has ex. </p>
+                            <p>Celebrating outstanding achievements, 2022 was a landmark year at Hackney University, with innovative breakthroughs and record-setting accomplishments across all disciplines.</p>
                             <a href="#0" class="button small">Read more</a>
                             </div>
                             <div class="col-md-4 col-sm-4">
                             <p><a href="#0"><img src="img/news_2_thumb.jpg" alt="" class="img-responsive"></a></p>
                                   <span class="date_published">20 Agusut 2022</span>
 <h3><a href="#0">Boost in A-Level Grades in 2022 for Students</a></h3>
-                            <p>Lorem ipsum dolor sit amet, ei tincidunt persequeris efficiantur vel, usu animal patrioque omittantur et. Timeam nostrud platonem nec ea, simul nihil delectus has ex. </p>
+                            <p>Our students excelled with unprecedented A-Level results in 2022, reflecting their hard work, expert guidance, and a curriculum designed to inspire excellence and creativity.</p>
                             <a href="#0" class="button small">Read more</a>
                             </div>
                             <div class="col-md-4 col-sm-4">
                             <p><a href="#0"><img src="img/news_3_thumb.jpg" alt="" class="img-responsive"></a></p>
                                   <span class="date_published">20 Agusut 2022</span>
 <h3><a href="#0">Caps Off To Sport at Hackney</a></h3>
-                            <p>Lorem ipsum dolor sit amet, ei tincidunt persequeris efficiantur vel, usu animal patrioque omittantur et. Timeam nostrud platonem nec ea, simul nihil delectus has ex. </p>
+                            <p>Sports and academics unite at Hackney University, where our athletes set impressive academic records alongside their athletic triumphs, embodying the spirit of holistic achievement.</p>
                             <a href="#0" class="button small">Read more</a>
                             </div>
                         </div><!--End row -->
@@ -448,21 +468,21 @@
                             <p><a href="#0"><img src="img/event_1_thumb.jpg" alt="" class="img-responsive"></a></p>
                                   <span class="date_published">20 Agusut 2022</span>
 <h3><a href="#0">Next students meeting</a></h3>
-                            <p>Lorem ipsum dolor sit amet, ei tincidunt persequeris efficiantur vel, usu animal patrioque omittantur et. Timeam nostrud platonem nec ea, simul nihil delectus has ex. </p>
+                            <p>Join our upcoming student meeting to explore innovative projects and share ideas that will shape the future of our community.</p>
                             <a href="#0" class="button small">Read more</a>
                             </div>
                             <div class="col-md-4 col-sm-4">
                             <p><a href="#0"><img src="img/event_2_thumb.jpg" alt="" class="img-responsive"></a></p>
                                   <span class="date_published">20 Agusut 2022</span>
 <h3><a href="#0">10 October Open day</a></h3>
-                            <p>Lorem ipsum dolor sit amet, ei tincidunt persequeris efficiantur vel, usu animal patrioque omittantur et. Timeam nostrud platonem nec ea, simul nihil delectus has ex. </p>
+                            <p>Experience Hackney University firsthand at our Open Day on October 10th. Explore our state-of-the-art campus and meet the experts behind our cutting-edge programs.</p>
                             <a href="#0" class="button small">Read more</a>
                             </div>
                             <div class="col-md-4 col-sm-4">
                             <p><a href="#0"><img src="img/event_3_thumb.jpg" alt="" class="img-responsive"></a></p>
                                   <span class="date_published">20 Agusut 2022</span>
 <h3><a href="#0">Photography workshop</a></h3>
-                            <p>Lorem ipsum dolor sit amet, ei tincidunt persequeris efficiantur vel, usu animal patrioque omittantur et. Timeam nostrud platonem nec ea, simul nihil delectus has ex. </p>
+                            <p>Unlock your creative potential at our hands-on photography workshop, where expert insights and practical sessions ignite your passion for visual storytelling.</p>
                             <a href="#0" class="button small">Read more</a>
                             </div>
                         </div><!--End row -->
@@ -473,12 +493,11 @@
             </div>
     
  
-    
     <div class="bg_content magnific">
             <div>
                 <h3>Discover the Campus</h3>
                 <p>
-                     Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.
+                     Step into a world of innovation and inspiration. Discover our vibrant campus, where modern facilities and rich traditions combine to create a transformative educational experience.
                 </p>
                 <a href="https://vimeo.com/20370747" class="video_pop"><i class="arrow_triangle-right_alt2"></i></a>
             </div>

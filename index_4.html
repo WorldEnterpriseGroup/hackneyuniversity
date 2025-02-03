@@ -45,92 +45,108 @@
 
     <!-- Header================================================== -->
     <header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-3">
-                <div id="logo">
-                    <a href="index.html"><img src="img/logo.png" width="125" height="40" alt="Atena" data-retina="true"></a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div id="logo">
+                        <a href="index.html"><img src="img/svg/hackneylogo_white.svg" height="40" alt="Hackney University" data-retina="true"></a>
+                    </div>
                 </div>
+                <nav class="col-md-9 col-sm-9 col-xs-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Mobile Menu</span></a>
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <img src="img/logo_mobile.png" width="125" height="40" alt="Hackney University" data-retina="true">
+                        </div>
+                        <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
+                        <ul>
+                            <!-- Programs Menu -->
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Academics <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="undergraduate.html">Undergraduate Programs</a></li>
+                                    <li><a href="graduate.html">Graduate Programs</a></li>
+                                    <li><a href="online.html">Online Learning</a></li>
+                                    <li><a href="non_degree.html">Non-Degree Programs</a></li>
+                                    <li><a href="calendar.html">Academic Calendar</a></li>
+                                </ul>
+                            </li>
+                            <!-- About Us Menu -->
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Admission <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="apply_online.html">Apply Online</a></li>
+                                    <li><a href="tuition.html">Tuition</a></li>
+                                    <li><a href="financial_aid.html">Financial Aid</a></li>
+                                    <li><a href="international.html">International Students</a></li>
+                                </ul>
+                            </li>
+                            <!-- Research & Innovation Megamenu -->
+                            <li class="megamenu submenu">
+                                <a href="javascript:void(0);" class="show-submenu-mega">Research <i class="icon-down-open-mini"></i></a>
+                                <div class="menu-wrapper">
+                                    <div class="col-md-4">
+                                        <h3>Artificial Intelligence</h3>
+                                        <ul>
+                                            <li><a href="ai_center.html"><i class="icon-rocket"></i> AI Research Center</a></li>
+                                            <li><a href="ml_lab.html"><i class="icon-rocket"></i> Machine Learning Lab</a></li>
+                                            <li><a href="robotics.html"><i class="icon-rocket"></i> Robotics &amp; Automation</a></li>
+                                            <li><a href="ai_ethics.html"><i class="icon-rocket"></i> AI Ethics Initiative</a></li>
+                                            <li><a href="data_science.html"><i class="icon-rocket"></i> Data Science Collaborative</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3>Futurism &amp; Technology</h3>
+                                        <ul>
+                                            <li><a href="futurism.html"><i class="icon-rocket"></i> Futurism Research</a></li>
+                                            <li><a href="space_tech.html"><i class="icon-rocket"></i> Space Technologies</a></li>
+                                            <li><a href="sustainability.html"><i class="icon-rocket"></i> Sustainability Projects</a></li>
+                                            <li><a href="innovation_hub.html"><i class="icon-rocket"></i> Innovation Hub</a></li>
+                                            <li><a href="emerging_tech.html"><i class="icon-rocket"></i> Emerging Technologies</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3>Business &amp; Incubation</h3>
+                                        <ul>
+                                            <li><a href="startup_incubator.html"><i class="icon-rocket"></i> Startup Incubator</a></li>
+                                            <li><a href="business_accelerator.html"><i class="icon-rocket"></i> Business Accelerator</a></li>
+                                            <li><a href="entrepreneurship.html"><i class="icon-rocket"></i> Entrepreneurship Program</a></li>
+                                            <li><a href="industry_partnerships.html"><i class="icon-rocket"></i> Industry Partnerships</a></li>
+                                            <li><a href="kardashev_projects.html"><i class="icon-rocket"></i> Kardashev Scale Projects</a></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- End menu-wrapper -->
+                            </li>
+                            <!-- Campus Menu -->
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Campus <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="campus.html">Overview</a></li>
+                                    <li><a href="campus_tour.html">Virtual Tour</a></li>
+                                    <li><a href="visit.html">Plan a Visit</a></li>
+                                    <li><a href="campus_life.html">Campus Life</a></li>
+                                </ul>
+                            </li>
+                            <!-- About Us Menu -->
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">About <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="about.html">Our Mission &amp; Vision</a></li>
+                                    <li><a href="history.html">History &amp; Legacy</a></li>
+                                    <li><a href="leadership.html">Leadership</a></li>
+                                    <li><a href="faculty.html">Faculty &amp; Staff</a></li>
+                                    <li><a href="chancellor_message.html">Chancellor&amp;s Message</a></li>
+                                </ul>
+                            </li>
+                            <!-- Login Modal -->
+                            <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
+                            <!-- Search -->
+                            <li><a href="#search" id="search_bt"><i class="icon-search"></i><span>Search</span></a></li>
+                        </ul>
+                    </div><!-- End main-menu -->
+                </nav>
             </div>
-            <nav class="col-md-9 col-sm-9 col-xs-9">
-            <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
-            <div class="main-menu">
-                <div id="header_menu">
-                    <img src="img/logo_mobile.png" width="125" height="40" alt="Atena" data-retina="true">
-                </div>
-                <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
-                <ul>
-                    <li class="submenu">
-                    <a href="javascript:void(0);" class="show-submenu">Home <i class="icon-down-open-mini"></i></a>
-                    <ul>
-                        <li><a href="index.html">Home Layer slider</a></li>
-                        <li><a href="index_2.html">Home Video</a></li>
-                        <li><a href="index_3.html">Home version 2</a></li>
-                        <li><a href="index_4.html">Home version 3</a></li>
-                        <li><a href="index_5.html">Home quick contact</a></li>
-                    </ul>
-                    </li>
-                    <li class="submenu">
-                    <a href="javascript:void(0);" class="show-submenu">Academic <i class="icon-down-open-mini"></i></a>
-                    <ul>
-                        <li><a href="diploma.html">Diploma courses</a></li>
-                        <li><a href="graduate.html">Graduate courses</a></li>
-                        <li><a href="master.html">Master courses</a></li>
-                        <li><a href="apply_online.html">Apply online</a></li>
-                        <li><a href="staff.html">Staff</a></li>
-                    </ul>
-                    </li>
-                    <li class="submenu">
-                    <a href="javascript:void(0);" class="show-submenu">About <i class="icon-down-open-mini"></i></a>
-                    <ul>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="contacts.html">Plan a visit</a></li>
-                        <li><a href="staff.html">Staff</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                    </li>
-                    <li class="megamenu submenu">
-                    <a href="javascript:void(0);" class="show-submenu-mega">Pages &amp; elements<i class="icon-down-open-mini"></i></a>
-                    <div class="menu-wrapper">
-                        <div class="col-md-4">
-                            <h3>Elements</h3>
-                            <ul>
-                                <li><a href="icon-pack-1.html"><i class="icon-inbox-alt"></i> Icon pack 1</a></li>
-                                <li><a href="icon-pack-2.html"><i class="icon-inbox-alt"></i> Icon pack 2</a></li>
-                                <li><a href="icon-pack-3.html"><i class="icon-inbox-alt"></i> Icon pack 3</a></li>
-                                <li><a href="icon-pack-4.html"><i class="icon-inbox-alt"></i> Icon pack 4</a></li>
-                                <li><a href="shortcodes.html"><i class="icon-tools"></i> Shortcodes</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h3>Pages</h3>
-                            <ul>
-                            	<li><a href="academic_single_course.html">Single course page</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contacts.html">Contacts</a></li>
-                                <li><a href="agenda_calendar.html">Agenda calendar</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h3>Pages</h3>
-                            <ul>
-                                <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
-                                <li><a href="#" data-toggle="modal" data-target="#register">Register</a></li>
-                                <li><a href="tour.html">Tour</a></li>
-                                <li><a href="site_launch/index.html">Site launch/Coming soon</a></li>
-                            </ul>
-                        </div>
-                    </div><!-- End menu-wrapper -->
-                    </li>
-                    <li><a href="tour.html">Tour</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
-                    <li><a href="#search" id="search_bt"><i class=" icon-search"></i><span>Search</span></a></li>
-                </ul>
-            </div><!-- End main-menu -->
-            </nav>
-        </div>
-    </div><!-- container -->
+        </div><!-- End container -->
     </header><!-- End Header -->
     
      <div class="sub_header bg_2">

@@ -41,425 +41,787 @@
 
     <!-- Header================================================== -->
     <header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-3">
-                <div id="logo">
-                    <a href="index.html"><img src="img/logo.png" width="125" height="40" alt="Atena" data-retina="true"></a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div id="logo">
+                        <a href="index.html"><img src="img/svg/hackneylogo_white.svg" height="40" alt="Hackney University" data-retina="true"></a>
+                    </div>
                 </div>
+                <nav class="col-md-9 col-sm-9 col-xs-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Mobile Menu</span></a>
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <img src="img/logo_mobile.png" width="125" height="40" alt="Hackney University" data-retina="true">
+                        </div>
+                        <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
+                        <ul>
+                            <!-- Programs Menu -->
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Academics <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="undergraduate.html">Undergraduate Programs</a></li>
+                                    <li><a href="graduate.html">Graduate Programs</a></li>
+                                    <li><a href="online.html">Online Learning</a></li>
+                                    <li><a href="non_degree.html">Non-Degree Programs</a></li>
+                                    <li><a href="calendar.html">Academic Calendar</a></li>
+                                </ul>
+                            </li>
+                            <!-- About Us Menu -->
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Admission <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="apply_online.html">Apply Online</a></li>
+                                    <li><a href="tuition.html">Tuition</a></li>
+                                    <li><a href="financial_aid.html">Financial Aid</a></li>
+                                    <li><a href="international.html">International Students</a></li>
+                                </ul>
+                            </li>
+                            <!-- Research & Innovation Megamenu -->
+                            <li class="megamenu submenu">
+                                <a href="javascript:void(0);" class="show-submenu-mega">Research <i class="icon-down-open-mini"></i></a>
+                                <div class="menu-wrapper">
+                                    <div class="col-md-4">
+                                        <h3>Artificial Intelligence</h3>
+                                        <ul>
+                                            <li><a href="ai_center.html"><i class="icon-rocket"></i> AI Research Center</a></li>
+                                            <li><a href="ml_lab.html"><i class="icon-rocket"></i> Machine Learning Lab</a></li>
+                                            <li><a href="robotics.html"><i class="icon-rocket"></i> Robotics &amp; Automation</a></li>
+                                            <li><a href="ai_ethics.html"><i class="icon-rocket"></i> AI Ethics Initiative</a></li>
+                                            <li><a href="data_science.html"><i class="icon-rocket"></i> Data Science Collaborative</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3>Futurism &amp; Technology</h3>
+                                        <ul>
+                                            <li><a href="futurism.html"><i class="icon-rocket"></i> Futurism Research</a></li>
+                                            <li><a href="space_tech.html"><i class="icon-rocket"></i> Space Technologies</a></li>
+                                            <li><a href="sustainability.html"><i class="icon-rocket"></i> Sustainability Projects</a></li>
+                                            <li><a href="innovation_hub.html"><i class="icon-rocket"></i> Innovation Hub</a></li>
+                                            <li><a href="emerging_tech.html"><i class="icon-rocket"></i> Emerging Technologies</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3>Business &amp; Incubation</h3>
+                                        <ul>
+                                            <li><a href="startup_incubator.html"><i class="icon-rocket"></i> Startup Incubator</a></li>
+                                            <li><a href="business_accelerator.html"><i class="icon-rocket"></i> Business Accelerator</a></li>
+                                            <li><a href="entrepreneurship.html"><i class="icon-rocket"></i> Entrepreneurship Program</a></li>
+                                            <li><a href="industry_partnerships.html"><i class="icon-rocket"></i> Industry Partnerships</a></li>
+                                            <li><a href="kardashev_projects.html"><i class="icon-rocket"></i> Kardashev Scale Projects</a></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- End menu-wrapper -->
+                            </li>
+                            <!-- Campus Menu -->
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Campus <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="campus.html">Overview</a></li>
+                                    <li><a href="campus_tour.html">Virtual Tour</a></li>
+                                    <li><a href="visit.html">Plan a Visit</a></li>
+                                    <li><a href="campus_life.html">Campus Life</a></li>
+                                </ul>
+                            </li>
+                            <!-- About Us Menu -->
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">About <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="about.html">Our Mission &amp; Vision</a></li>
+                                    <li><a href="history.html">History &amp; Legacy</a></li>
+                                    <li><a href="leadership.html">Leadership</a></li>
+                                    <li><a href="faculty.html">Faculty &amp; Staff</a></li>
+                                    <li><a href="chancellor_message.html">Chancellor&amp;s Message</a></li>
+                                </ul>
+                            </li>
+                            <!-- Login Modal -->
+                            <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
+                            <!-- Search -->
+                            <li><a href="#search" id="search_bt"><i class="icon-search"></i><span>Search</span></a></li>
+                        </ul>
+                    </div><!-- End main-menu -->
+                </nav>
             </div>
-            <nav class="col-md-9 col-sm-9 col-xs-9">
-            <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
-            <div class="main-menu">
-                <div id="header_menu">
-                    <img src="img/logo_mobile.png" width="125" height="40" alt="Atena" data-retina="true">
-                </div>
-                <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
-                <ul>
-                    <li class="submenu">
-                    <a href="javascript:void(0);" class="show-submenu">Home <i class="icon-down-open-mini"></i></a>
-                    <ul>
-                        <li><a href="index.html">Home Layer slider</a></li>
-                        <li><a href="index_2.html">Home Video</a></li>
-                        <li><a href="index_3.html">Home version 2</a></li>
-                        <li><a href="index_4.html">Home version 3</a></li>
-                        <li><a href="index_5.html">Home quick contact</a></li>
-                    </ul>
-                    </li>
-                    <li class="submenu">
-                    <a href="javascript:void(0);" class="show-submenu">Academic <i class="icon-down-open-mini"></i></a>
-                    <ul>
-                        <li><a href="diploma.html">Diploma courses</a></li>
-                        <li><a href="graduate.html">Graduate courses</a></li>
-                        <li><a href="master.html">Master courses</a></li>
-                        <li><a href="apply_online.html">Apply online</a></li>
-                        <li><a href="staff.html">Staff</a></li>
-                    </ul>
-                    </li>
-                    <li class="submenu">
-                    <a href="javascript:void(0);" class="show-submenu">About <i class="icon-down-open-mini"></i></a>
-                    <ul>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="contacts.html">Plan a visit</a></li>
-                        <li><a href="staff.html">Staff</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                    </li>
-                    <li class="megamenu submenu">
-                    <a href="javascript:void(0);" class="show-submenu-mega">Pages &amp; elements<i class="icon-down-open-mini"></i></a>
-                    <div class="menu-wrapper">
-                        <div class="col-md-4">
-                            <h3>Elements</h3>
-                            <ul>
-                                <li><a href="icon-pack-1.html"><i class="icon-inbox-alt"></i> Icon pack 1</a></li>
-                                <li><a href="icon-pack-2.html"><i class="icon-inbox-alt"></i> Icon pack 2</a></li>
-                                <li><a href="icon-pack-3.html"><i class="icon-inbox-alt"></i> Icon pack 3</a></li>
-                                <li><a href="icon-pack-4.html"><i class="icon-inbox-alt"></i> Icon pack 4</a></li>
-                                <li><a href="shortcodes.html"><i class="icon-tools"></i> Shortcodes</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h3>Pages</h3>
-                            <ul>
-                            	<li><a href="academic_single_course.html">Single course page</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contacts.html">Contacts</a></li>
-                                <li><a href="agenda_calendar.html">Agenda calendar</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h3>Pages</h3>
-                            <ul>
-                                <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
-                                <li><a href="#" data-toggle="modal" data-target="#register">Register</a></li>
-                                <li><a href="tour.html">Tour</a></li>
-                                <li><a href="site_launch/index.html">Site launch/Coming soon</a></li>
-                            </ul>
-                        </div>
-                    </div><!-- End menu-wrapper -->
-                    </li>
-                    <li><a href="tour.html">Tour</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
-                    <li><a href="#search" id="search_bt"><i class=" icon-search"></i><span>Search</span></a></li>
-                </ul>
-            </div><!-- End main-menu -->
-            </nav>
-        </div>
-    </div><!-- container -->
+        </div><!-- End container -->
     </header><!-- End Header -->
     
-        <div class="sub_header bg_1">
-            <div id="intro_txt">
-                <h1>Atena <strong>Graduate</strong> courses</h1>
-                <p>
-                    Ex saepe accusata duo, vel ne summo option delenit.
-                </p>
-            </div>
-        </div><!--End sub_header -->
+    <!-- Graduate & Doctorate Programs Page -->
+
+    <div class="sub_header bg_1">
+        <div id="intro_txt">
+            <h1><strong>Graduate &amp; Doctorate</strong> Programs</h1>
+            <p>Explore our world-class programs that combine timeless academic rigor with innovative research to shape the future.</p>
+        </div>
+    </div><!-- End sub_header -->
+
+    <div id="position">
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Programs</a></li>
+                <li>Graduate &amp; Doctorate Programs</li>
+            </ul>
+        </div>
+    </div><!-- End Position -->
+
+
+    <!-- GRADUATE PROGRAMS SECTION -->
+<div class="container_gray_bg">
+    <div class="container margin_60">
+      <h2 class="main_title">Graduate Programs</h2>
+      <div class="row">
+        <div class="col-md-9">
         
-        <div id="position">
-            <div class="container">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Category</a></li>
-                    <li>Page active</li>
-                </ul>
-            </div>
-        </div><!-- Position -->
-        
-        <div class="container_gray_bg">
-            <div class="container margin_60">
-                <div class="row">
-                    <div class="col-md-9">
-                    
-                        <div class="strip_all_courses_list wow fadeIn" data-wow-delay="0.1s">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="img_list">
-                                        <a href="academic_single_course.html"><img src="img/graduate_1.jpg" alt="">
-                                        <div class="short_info">
-                                            <h3>Engineering</h3>
-                                        </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="clearfix visible-xs-block">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="course_list_desc">
-                                        <h3><strong>Engineering</strong> graduate</h3>
-                                        <p>
-                                            Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius. Te pri facete latine salutandi, scripta mediocrem et sed, cum ne mundi vulputate....
-                                        </p>
-                                        <ul class="add_info">
-                                            <li>
-                                            <div class="tooltip_styled tooltip-effect-4">
-                                                <span class="tooltip-item"><i class="pe-7s-compass"></i></span>
-                                                <div class="tooltip-content">
-                                                    Dedicated Study Plan
-                                                </div>
-                                            </div>
-                                            </li>
-                                            <li>
-                                            <div class="tooltip_styled tooltip-effect-4">
-                                                <span class="tooltip-item"><i class="pe-7s-hourglass"></i></span>
-                                                <div class="tooltip-content">
-                                                    Admission Deadline 31/11/2022
-                                                </div>
-                                            </div>
-                                            </li>
-                                            <li>
-                                            <div class="tooltip_styled tooltip-effect-4">
-                                                <span class="tooltip-item"><i class="pe-7s-medal"></i></span>
-                                                <div class="tooltip-content">
-                                                    Most Requested Course
-                                                </div>
-                                            </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-2 col-sm-2">
-                                    <div class="details_list_col">
-                                        <div>
-                                            <a href="academic_single_course.html" class="button_outline">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--End strip -->
-                        
-                        <div class="strip_all_courses_list wow fadeIn" data-wow-delay="0.1s">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="img_list">
-                                        <a href="academic_single_course.html"><img src="img/graduate_2.jpg" alt="">
-                                        <div class="short_info">
-                                            <h3>Biology</h3>
-                                        </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="clearfix visible-xs-block">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="course_list_desc">
-                                        <h3><strong>Biology</strong> graduate</h3>
-                                        <p>
-                                            Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius. Te pri facete latine salutandi, scripta mediocrem et sed, cum ne mundi vulputate....
-                                        </p>
-                                        <ul class="add_info">
-                                            <li>
-                                            <div class="tooltip_styled tooltip-effect-4">
-                                                <span class="tooltip-item"><i class="pe-7s-compass"></i></span>
-                                                <div class="tooltip-content">
-                                                    Dedicated Study Plan
-                                                </div>
-                                            </div>
-                                            </li>
-                                            <li>
-                                            <div class="tooltip_styled tooltip-effect-4">
-                                                <span class="tooltip-item"><i class="pe-7s-hourglass"></i></span>
-                                                <div class="tooltip-content">
-                                                    Admission Deadline 31/11/2022
-                                                </div>
-                                            </div>
-                                            </li>
-                                            <li>
-                                            <div class="tooltip_styled tooltip-effect-4">
-                                                <span class="tooltip-item"><i class="pe-7s-medal"></i></span>
-                                                <div class="tooltip-content">
-                                                    Most Requested Course
-                                                </div>
-                                            </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-2 col-sm-2">
-                                    <div class="details_list_col">
-                                        <div>
-                                            <a href="academic_single_course.html" class="button_outline">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--End strip -->
-                        
-                        <div class="strip_all_courses_list wow fadeIn" data-wow-delay="0.1s">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="img_list">
-                                        <a href="academic_single_course.html"><img src="img/graduate_3.jpg" alt="">
-                                        <div class="short_info">
-                                            <h3>Psicology</h3>
-                                        </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="clearfix visible-xs-block">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="course_list_desc">
-                                        <h3><strong>Psicology</strong> graduate</h3>
-                                        <p>
-                                            Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius. Te pri facete latine salutandi, scripta mediocrem et sed, cum ne mundi vulputate....
-                                        </p>
-                                        <ul class="add_info">
-                                            <li>
-                                            <div class="tooltip_styled tooltip-effect-4">
-                                                <span class="tooltip-item"><i class="pe-7s-compass"></i></span>
-                                                <div class="tooltip-content">
-                                                    Dedicated Study Plan
-                                                </div>
-                                            </div>
-                                            </li>
-                                            <li>
-                                            <div class="tooltip_styled tooltip-effect-4">
-                                                <span class="tooltip-item"><i class="pe-7s-hourglass"></i></span>
-                                                <div class="tooltip-content">
-                                                    Admission Deadline 31/11/2022
-                                                </div>
-                                            </div>
-                                            </li>
-                                            <li>
-                                            <div class="tooltip_styled tooltip-effect-4">
-                                                <span class="tooltip-item"><i class="pe-7s-medal"></i></span>
-                                                <div class="tooltip-content">
-                                                    Most Requested Course
-                                                </div>
-                                            </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-2 col-sm-2">
-                                    <div class="details_list_col">
-                                        <div>
-                                            <a href="academic_single_course.html" class="button_outline">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--End strip -->
-                        
-                        <div class="strip_all_courses_list wow fadeIn" data-wow-delay="0.1s">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="img_list">
-                                        <a href="academic_single_course.html"><img src="img/graduate_4.jpg" alt="">
-                                        <div class="short_info">
-                                            <h3>Economy</h3>
-                                        </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="clearfix visible-xs-block">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="course_list_desc">
-                                        <h3><strong>Arts</strong> graduate</h3>
-                                        <p>
-                                            Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius. Te pri facete latine salutandi, scripta mediocrem et sed, cum ne mundi vulputate....
-                                        </p>
-                                        <ul class="add_info">
-                                            <li>
-                                            <div class="tooltip_styled tooltip-effect-4">
-                                                <span class="tooltip-item"><i class="pe-7s-compass"></i></span>
-                                                <div class="tooltip-content">
-                                                    Dedicated Study Plan
-                                                </div>
-                                            </div>
-                                            </li>
-                                            <li>
-                                            <div class="tooltip_styled tooltip-effect-4">
-                                                <span class="tooltip-item"><i class="pe-7s-hourglass"></i></span>
-                                                <div class="tooltip-content">
-                                                    Admission Deadline 31/11/2022
-                                                </div>
-                                            </div>
-                                            </li>
-                                            <li>
-                                            <div class="tooltip_styled tooltip-effect-4">
-                                                <span class="tooltip-item"><i class="pe-7s-medal"></i></span>
-                                                <div class="tooltip-content">
-                                                    Most Requested Course
-                                                </div>
-                                            </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-2 col-sm-2">
-                                    <div class="details_list_col">
-                                        <div>
-                                            <a href="academic_single_course.html" class="button_outline">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--End strip -->
-                        
-                        <div class="strip_all_courses_list wow fadeIn" data-wow-delay="0.1s">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="img_list">
-                                        <a href="academic_single_course.html"><img src="img/graduate_5.jpg" alt="">
-                                        <div class="short_info">
-                                            <h3>Architecture</h3>
-                                        </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="clearfix visible-xs-block">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="course_list_desc">
-                                        <h3><strong>Architecture</strong> graduate</h3>
-                                        <p>
-                                            Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius. Te pri facete latine salutandi, scripta mediocrem et sed, cum ne mundi vulputate....
-                                        </p>
-                                        <ul class="add_info">
-                                            <li>
-                                            <div class="tooltip_styled tooltip-effect-4">
-                                                <span class="tooltip-item"><i class="pe-7s-compass"></i></span>
-                                                <div class="tooltip-content">
-                                                    Dedicated Study Plan
-                                                </div>
-                                            </div>
-                                            </li>
-                                            <li>
-                                            <div class="tooltip_styled tooltip-effect-4">
-                                                <span class="tooltip-item"><i class="pe-7s-hourglass"></i></span>
-                                                <div class="tooltip-content">
-                                                    Admission Deadline 31/11/2022
-                                                </div>
-                                            </div>
-                                            </li>
-                                            <li>
-                                            <div class="tooltip_styled tooltip-effect-4">
-                                                <span class="tooltip-item"><i class="pe-7s-medal"></i></span>
-                                                <div class="tooltip-content">
-                                                    Most Requested Course
-                                                </div>
-                                            </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md-2 col-sm-2">
-                                    <div class="details_list_col">
-                                        <div>
-                                            <a href="academic_single_course.html" class="button_outline">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--End strip -->
-                        
-                    </div><!--End col-md-9 -->
-                    
-                    <aside class="col-md-3">
-                    <div class="banner">
-                        <i class=" iconcustom-school"></i>
-                        <h3>Take a campus tour</h3>
-                        <p>
-                            Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius.
-                        </p>
-                        <a href="tour.html" class="banner_bt">Start tour</a>
+          <!-- Program 1: Masters in Computer and Information Sciences (Combined: AI, Quantum, Data Science) -->
+          <div class="strip_all_courses_list wow fadeIn" data-wow-delay="0.1s">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="img_list">
+                  <a href="academic_single_course.html">
+                    <img src="https://picsum.photos/seed/compinfo_grad/400/250" alt="Masters in Computer and Information Sciences" class="img-responsive">
+                    <div class="short_info">
+                      <h3>Computer &amp; Information Sciences</h3>
                     </div>
-                    <h4><strong>How to apply</strong></h4>
-                    <p>
-                        Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius. Te pri facete latine salutandi, scripta mediocrem et sed, cum.
-                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="clearfix visible-xs-block"></div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="course_list_desc">
+                  <h3><strong>Masters in Computer and Information Sciences</strong></h3>
+                  <p>
+                    This integrated program unifies advanced studies in Artificial Intelligence, Quantum Mechanics, and Data Science. Experience a research-driven curriculum designed to foster innovation, theoretical mastery, and practical solutions for the digital era.
+                  </p>
+                  <ul class="add_info">
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-compass"></i></span>
+                        <div class="tooltip-content">
+                          Comprehensive Research Curriculum
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-hourglass"></i></span>
+                        <div class="tooltip-content">
+                          Application Deadline 31/12/2023
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-medal"></i></span>
+                        <div class="tooltip-content">
+                          Advanced &amp; Innovative
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="details_list_col">
+                  <div>
+                    <a href="academic_single_course.html" class="button_outline">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Program 1 -->
+          
+          <!-- Program 2: Masters in Hospitality &amp; Tourism -->
+          <div class="strip_all_courses_list wow fadeIn" data-wow-delay="0.2s">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="img_list">
+                  <a href="academic_single_course.html">
+                    <img src="https://picsum.photos/seed/hospitality_grad/400/250" alt="Masters in Hospitality &amp; Tourism" class="img-responsive">
+                    <div class="short_info">
+                      <h3>Hospitality &amp; Tourism</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="clearfix visible-xs-block"></div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="course_list_desc">
+                  <h3><strong>Masters in Hospitality &amp; Tourism</strong></h3>
+                  <p>
+                    Elevate your expertise in the global service industry. Our program blends classic service excellence with modern operational strategies to redefine the future of travel and leisure.
+                  </p>
+                  <ul class="add_info">
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-compass"></i></span>
+                        <div class="tooltip-content">
+                          Service &amp; Innovation Curriculum
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-hourglass"></i></span>
+                        <div class="tooltip-content">
+                          Application Deadline 31/12/2023
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-medal"></i></span>
+                        <div class="tooltip-content">
+                          Globally Recognized Program
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="details_list_col">
+                  <div>
+                    <a href="academic_single_course.html" class="button_outline">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Program 2 -->
+          
+          <!-- Program 3: Masters in Business Administration -->
+          <div class="strip_all_courses_list wow fadeIn" data-wow-delay="0.3s">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="img_list">
+                  <a href="academic_single_course.html">
+                    <img src="https://picsum.photos/seed/mba_grad/400/250" alt="Masters in Business Administration" class="img-responsive">
+                    <div class="short_info">
+                      <h3>Business Administration</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="clearfix visible-xs-block"></div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="course_list_desc">
+                  <h3><strong>Masters in Business Administration</strong></h3>
+                  <p>
+                    Cultivate strategic leadership and innovative management skills through a program that harmonizes traditional business theory with digital-era practices, ensuring academic prestige and practical relevance.
+                  </p>
+                  <ul class="add_info">
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-compass"></i></span>
+                        <div class="tooltip-content">
+                          Leadership &amp; Ethics Orientation
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-hourglass"></i></span>
+                        <div class="tooltip-content">
+                          Application Deadline 31/12/2023
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-medal"></i></span>
+                        <div class="tooltip-content">
+                          Esteemed Global Faculty
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="details_list_col">
+                  <div>
+                    <a href="academic_single_course.html" class="button_outline">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Program 3 -->
+          
+          <!-- Program 4: Masters in Educational Leadership -->
+          <div class="strip_all_courses_list wow fadeIn" data-wow-delay="0.4s">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="img_list">
+                  <a href="academic_single_course.html">
+                    <img src="https://picsum.photos/seed/edu_grad/400/250" alt="Masters in Educational Leadership" class="img-responsive">
+                    <div class="short_info">
+                      <h3>Educational Leadership</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="clearfix visible-xs-block"></div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="course_list_desc">
+                  <h3><strong>Masters in Educational Leadership</strong></h3>
+                  <p>
+                    Empower future educators with transformative pedagogical strategies and leadership insights. This program fuses traditional academic values with modern innovations to drive lasting impact in the field of education.
+                  </p>
+                  <ul class="add_info">
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-compass"></i></span>
+                        <div class="tooltip-content">
+                          Forward-Thinking Pedagogy
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-hourglass"></i></span>
+                        <div class="tooltip-content">
+                          Application Deadline 31/12/2023
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-medal"></i></span>
+                        <div class="tooltip-content">
+                          Inverse Innovation
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="details_list_col">
+                  <div>
+                    <a href="academic_single_course.html" class="button_outline">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Program 4 -->
+          
+          <!-- Program 5: Masters in Human Resource Management -->
+          <div class="strip_all_courses_list wow fadeIn" data-wow-delay="0.5s">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="img_list">
+                  <a href="academic_single_course.html">
+                    <img src="https://picsum.photos/seed/hr_grad/400/250" alt="Masters in Human Resource Management" class="img-responsive">
+                    <div class="short_info">
+                      <h3>Human Resource Management</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="clearfix visible-xs-block"></div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="course_list_desc">
+                  <h3><strong>Masters in Human Resource Management</strong></h3>
+                  <p>
+                    Progress from a Bachelor&apos;s in HR to advanced expertise in strategic human capital management. At Hackney University, our program enriches your understanding of organizational behavior, talent optimization, and leadership development, preparing you for a dynamic role in today&apos;s global business environment.
+                  </p>
+                  <ul class="add_info">
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-compass"></i></span>
+                        <div class="tooltip-content">
+                          Advanced HR Strategy &amp; Leadership
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-hourglass"></i></span>
+                        <div class="tooltip-content">
+                          Application Deadline 31/12/2023
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-medal"></i></span>
+                        <div class="tooltip-content">
+                          Prestigious Industry Recognition
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="details_list_col">
+                  <div>
+                    <a href="academic_single_course.html" class="button_outline">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Program 5 -->
+          
+        </div><!-- End col-md-9 -->
+  
+        <!-- Sidebar -->
+        <aside class="col-md-3">
+          <div class="banner">
+            <i class="iconcustom-school"></i>
+            <h3>Take a Campus Tour</h3>
+            <p>Discover our state-of-the-art facilities and inspiring academic environment on a guided tour of Hackney University.</p>
+            <a href="tour.html" class="banner_bt">Start Tour</a>
+          </div>
+          <h4><strong>How to Apply</strong></h4>
+          <p>Learn more about our application process and take the first step toward joining our esteemed academic community.</p>
+          <hr class="styled">
+          <div class="box_side">
+            <h5>By Phone</h5>
+            <i class="icon-phone"></i>
+            <p>
+              <a href="tel://033284322">+ 0043 848293 43</a><br>
+              <small>Monday to Friday 9.00am - 6.00pm</small>
+            </p>
+          </div>
+          <hr class="styled">
+          <div class="box_side">
+            <h5>By Postal Mail</h5>
+            <i class="icon_pencil-edit"></i>
+            <p>
+              <a href="#0"><strong>Download the application form</strong></a>,<br>
+              and send it to this address:<br><br>
+              <em>4 West 31st Street, New York<br>
+              10001 United States</em>
+            </p>
+          </div>
+          <hr class="styled">
+          <div class="box_side">
+            <h5>Apply Online</h5>
+            <i class="icon_desktop"></i>
+            <p>Explore our streamlined online application process and begin your journey at Hackney University today.</p>
+            <p><a href="apply_online.html" class="button small">Apply Online</a></p>
+          </div>
+        </aside>
+      </div><!-- End row -->
+    </div><!-- End container -->
+  </div><!-- End container_gray_bg -->
+  
+  <!-- DOCTORATE PROGRAMS SECTION -->
+  <div class="container_gray_bg">
+    <div class="container margin_60">
+      <h2 class="main_title">Doctorate Programs</h2>
+      <div class="row">
+        <div class="col-md-9">
+        
+          <!-- Doctorate Program 1: PhD in Computer and Information Sciences -->
+          <div class="strip_all_courses_list wow fadeIn" data-wow-delay="0.1s">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="img_list">
+                  <a href="academic_single_course.html">
+                    <img src="https://picsum.photos/seed/phd_compinfo/400/250" alt="Doctor of Philosophy in Computer and Information Sciences" class="img-responsive">
+                    <div class="short_info">
+                      <h3>Computer &amp; Information Sciences</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="clearfix visible-xs-block"></div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="course_list_desc">
+                  <h3><strong>Doctor of Philosophy in Computer and Information Sciences</strong></h3>
+                  <p>
+                    Engage in pioneering research that spans Artificial Intelligence, Quantum Computing, and Data Analytics. Build a foundation in advanced research methodologies and contribute to breakthrough innovations.
+                  </p>
+                  <ul class="add_info">
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-compass"></i></span>
+                        <div class="tooltip-content">
+                          Advanced Research Methodologies
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-hourglass"></i></span>
+                        <div class="tooltip-content">
+                          Enrollment Deadline 31/12/2023
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-medal"></i></span>
+                        <div class="tooltip-content">
+                          World-Class Research Facilities
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="details_list_col">
+                  <div>
+                    <a href="academic_single_course.html" class="button_outline">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Doctorate Program 1 -->
+          
+          <!-- Doctorate Program 2: Doctor of Business Administration -->
+          <div class="strip_all_courses_list wow fadeIn" data-wow-delay="0.2s">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="img_list">
+                  <a href="academic_single_course.html">
+                    <img src="https://picsum.photos/seed/phd_mba/400/250" alt="Doctor of Business Administration" class="img-responsive">
+                    <div class="short_info">
+                      <h3>Business Administration</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="clearfix visible-xs-block"></div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="course_list_desc">
+                  <h3><strong>Doctor of Business Administration</strong></h3>
+                  <p>
+                    Designed for visionary leaders, this program refines strategic management and advanced business research, merging rigorous academic theory with real-world challenges.
+                  </p>
+                  <ul class="add_info">
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-compass"></i></span>
+                        <div class="tooltip-content">
+                          Strategic Business Research
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-hourglass"></i></span>
+                        <div class="tooltip-content">
+                          Enrollment Deadline 31/12/2023
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-medal"></i></span>
+                        <div class="tooltip-content">
+                          Globally Recognized Research
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="details_list_col">
+                  <div>
+                    <a href="academic_single_course.html" class="button_outline">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Doctorate Program 2 -->
+          
+          <!-- Doctorate Program 3: Doctor of Education in Leadership and Innovation -->
+          <div class="strip_all_courses_list wow fadeIn" data-wow-delay="0.3s">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="img_list">
+                  <a href="academic_single_course.html">
+                    <img src="https://picsum.photos/seed/phd_edu/400/250" alt="Doctor of Education in Leadership and Innovation" class="img-responsive">
+                    <div class="short_info">
+                      <h3>Educational Leadership</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="clearfix visible-xs-block"></div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="course_list_desc">
+                  <h3><strong>Doctor of Education in Leadership and Innovation</strong></h3>
+                  <p>
+                    This distinguished program is tailored for visionary education leaders, merging rigorous research with transformative practices to reshape educational paradigms.
+                  </p>
+                  <ul class="add_info">
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-compass"></i></span>
+                        <div class="tooltip-content">
+                          Innovative Educational Research
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-hourglass"></i></span>
+                        <div class="tooltip-content">
+                          Enrollment Deadline 31/12/2023
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-medal"></i></span>
+                        <div class="tooltip-content">
+                          Renowned Academic Expertise
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="details_list_col">
+                  <div>
+                    <a href="academic_single_course.html" class="button_outline">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Doctorate Program 3 -->
+          
+          <!-- Doctorate Program 4: PhD in Hospitality and Tourism Management -->
+          <div class="strip_all_courses_list wow fadeIn" data-wow-delay="0.4s">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="img_list">
+                  <a href="academic_single_course.html">
+                    <img src="https://picsum.photos/seed/phd_hosp/400/250" alt="Doctor of Philosophy in Hospitality and Tourism Management" class="img-responsive">
+                    <div class="short_info">
+                      <h3>Hospitality &amp; Tourism</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="clearfix visible-xs-block"></div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="course_list_desc">
+                  <h3><strong>Doctor of Philosophy in Hospitality and Tourism Management</strong></h3>
+                  <p>
+                    Conduct pioneering research on global trends in hospitality and tourism management. This program challenges conventional practices and fosters innovative strategies through scholarly inquiry.
+                  </p>
+                  <ul class="add_info">
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-compass"></i></span>
+                        <div class="tooltip-content">
+                          Advanced Hospitality Research
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-hourglass"></i></span>
+                        <div class="tooltip-content">
+                          Enrollment Deadline 31/12/2023
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-medal"></i></span>
+                        <div class="tooltip-content">
+                          World-Class Industry Insights
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="details_list_col">
+                  <div>
+                    <a href="academic_single_course.html" class="button_outline">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Doctorate Program 4 -->
+          
+          <!-- Doctorate Program 5: Doctor of Philosophy in Human Resource Management -->
+          <div class="strip_all_courses_list wow fadeIn" data-wow-delay="0.5s">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="img_list">
+                  <a href="academic_single_course.html">
+                    <img src="https://picsum.photos/seed/phd_hr/400/250" alt="Doctor of Philosophy in Human Resource Management" class="img-responsive">
+                    <div class="short_info">
+                      <h3>Human Resource Management</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="clearfix visible-xs-block"></div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="course_list_desc">
+                  <h3><strong>Doctor of Philosophy in Human Resource Management</strong></h3>
+                  <p>
+                    Advance your mastery in human capital innovation and strategic leadership. This rigorous PhD program offers a compelling platform for breakthrough research in HR practices, equipping scholars with the tools to transform organizational dynamics in an ever-evolving global landscape.
+                  </p>
+                  <ul class="add_info">
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-compass"></i></span>
+                        <div class="tooltip-content">
+                          Cutting-Edge HR Research Methodologies
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-hourglass"></i></span>
+                        <div class="tooltip-content">
+                          Enrollment Deadline 31/12/2023
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tooltip_styled tooltip-effect-4">
+                        <span class="tooltip-item"><i class="pe-7s-medal"></i></span>
+                        <div class="tooltip-content">
+                          Global Academic Esteem
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="details_list_col">
+                  <div>
+                    <a href="academic_single_course.html" class="button_outline">Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Doctorate Program 5 -->
+
+                </div><!-- End col-md-9 -->
+
+                <!-- Sidebar -->
+                <aside class="col-md-3">
+                    <div class="banner">
+                        <i class="iconcustom-school"></i>
+                        <h3>Take a Campus Tour</h3>
+                        <p>Discover our state-of-the-art facilities and inspiring academic setting on a guided tour of Hackney University.</p>
+                        <a href="tour.html" class="banner_bt">Start Tour</a>
+                    </div>
+                    <h4><strong>How to Apply</strong></h4>
+                    <p>Learn about our application process and take the first step toward joining our legacy of academic excellence.</p>
                     <hr class="styled">
                     <div class="box_side">
                         <h5>By Phone</h5>
                         <i class="icon-phone"></i>
                         <p>
                             <a href="tel://033284322">+ 0043 848293 43</a><br>
-                            <small>Monday to Friday 9.00am - 6.00pm</small>
+                            <small>Mon - Fri 9.00am - 6.00pm</small>
                         </p>
                     </div>
                     <hr class="styled">
@@ -468,93 +830,88 @@
                         <i class="icon_pencil-edit"></i>
                         <p>
                             <a href="#0"><strong>Download the application form</strong></a>,<br>
-                             and send it to this address:<br>
-                            <br>
-                            <em>4 West 31st Street New York<br>
-                             10001 United States</em>
+                            and send it to:<br><br>
+                            <em>4 West 31st Street, New York<br>
+                            10001 United States</em>
                         </p>
                     </div>
                     <hr class="styled">
                     <div class="box_side">
                         <h5>Apply Online</h5>
                         <i class="icon_desktop"></i>
-                        <p>
-                            Eam admodum pertinacia an, essent nostro audiam ad qui, pro ex habeo aeterno maluisset. Aeque apeirian duo et, ad ludus denique tincidunt usu.
-                        </p>
-                        <p>
-                            <a href="apply_online.html" class="button small">Apply online</a>
-                        </p>
+                        <p>Begin your journey with our streamlined online application process for Hackney University.</p>
+                        <p><a href="apply_online.html" class="button small">Apply Online</a></p>
                     </div>
-                    </aside>
-                    
-                </div><!--End row -->
-            </div><!--End container -->
-        </div><!--End container_gray_bg -->
-        
-        <div class=" container_gray_line" id="newsletter_container">
-            <div class="container margin_60">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 text-center">
-                        <h3>Subscribe to our Newsletter for latest news.</h3>
-                        <div id="message-newsletter">
-                        </div>
-                        <form method="post" action="assets/newsletter.php" name="newsletter" id="newsletter" class="form-inline">
-                            <input name="email_newsletter" id="email_newsletter" type="email" value="" placeholder="Your Email" class="form-control">
-                            <button id="submit-newsletter" class="button"> Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div><!-- End newsletter_container -->
-        
-        <footer>
-        <div class="container">
-            <div class="row ">
-                <div class="col-md-3 col-sm-3">
-                    <p id="logo_footer">
-                        <img src="img/logo.png" width="125" height="40" alt="Atena" data-retina="true">
-                    </p>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                    <h4>About</h4>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Register</a></li>
-                        <li><a href="#">Terms and condition</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                    <h4>Academic</h4>
-                    <ul>
-                        <li><a href="#">Plans of study</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Admissions</a></li>
-                        <li><a href="#">Staff</a></li>
-                        <li><a href="#">Students</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                    <h4>Contact us</h4>
-                    <ul>
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Plan a visit</a></li>
-                    </ul>
-                    <ul id="contacts_footer">
-                        <li>Info line - <a href="tel://033284322">+0332 84322456</a></li>
-                        <li>Email - <a href="#">info@hackneyuniversity.org</a> / <a href="#">office@hackneyuniversity.org</a></li>
-                    </ul>
-                </div>
+                </aside>
             </div><!-- End row -->
         </div><!-- End container -->
-        </footer><!-- End footer -->
-        
-        <div id="copy">
-            <div class="container">
-                 © <a href="https://taofruit.com" target="_blank">Tao Fruit</a> - All rights reserved.
+    </div><!-- End container_gray_bg -->
+
+
+    <!-- NEWSLETTER SECTION -->
+    <div class="container_gray_line" id="newsletter_container">
+        <div class="container margin_60">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h3>Subscribe to our Newsletter for the Latest News.</h3>
+                    <div id="message-newsletter"></div>
+                    <form method="post" action="assets/newsletter.php" name="newsletter" id="newsletter" class="form-inline">
+                        <input name="email_newsletter" id="email_newsletter" type="email" value="" placeholder="Your Email" class="form-control">
+                        <button id="submit-newsletter" class="button">Subscribe</button>
+                    </form>
+                </div>
             </div>
-        </div><!-- End copy -->
+        </div>
+    </div><!-- End newsletter_container -->
+
+    <footer>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-3 col-sm-3">
+                <p id="logo_footer">
+                    <img src="img/logo.png" width="125" height="40" alt="Atena" data-retina="true">
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Terms and condition</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <h4>Academic</h4>
+                <ul>
+                    <li><a href="#">Plans of study</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">Students</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <h4>Contact us</h4>
+                <ul>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Plan a visit</a></li>
+                </ul>
+                <ul id="contacts_footer">
+                    <li>Info line - <a href="tel://033284322">+0332 84322456</a></li>
+                    <li>Email - <a href="#">info@hackneyuniversity.org</a> / <a href="#">office@hackneyuniversity.org</a></li>
+                </ul>
+            </div>
+        </div><!-- End row -->
+    </div><!-- End container -->
+    </footer><!-- End footer -->
+    
+    <div id="copy">
+        <div class="container">
+                © <a href="https://taofruit.com" target="_blank">Tao Fruit</a> - All rights reserved.
+        </div>
+    </div><!-- End copy -->
     
 <!-- Login modal -->   
 <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myLogin" aria-hidden="true">

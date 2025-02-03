@@ -862,7 +862,7 @@ ul.list_teachers li h5{
 }
 .img_list{
 	overflow:hidden;
-	min-height:220px;
+	min-height:250px;
 	text-align:center;
 	position:relative;
 	-webkit-border-bottom-left-radius: 3px;
@@ -914,7 +914,7 @@ ul.list_teachers li h5{
 }
 .details_list_col{
 	display:table;
-	height:220px;
+	height:250px;
 	font-size:38px;
 	color:#e74c3c;
 	width:100%;
@@ -1691,6 +1691,24 @@ s.checkbox-holder {
 	outline:none;
 }
 .btn.btn-submit:hover {
+	color: #3f9ad6;
+	background: #fff;
+}
+
+.btn.btn-secondary {
+	color: #fff;
+	/* padding:10px; */
+	background: #3f9ad6;
+	outline:none;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	font-size:16px;
+	font-family: "proxima_novasemibold", Arial, Helvetica, sans-serif;
+}
+.btn.btn-secondary:focus {
+	outline:none;
+}
+.btn.btn-secondary:hover {
 	color: #3f9ad6;
 	background: #fff;
 }

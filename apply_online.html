@@ -45,429 +45,451 @@
 
     <!-- Header================================================== -->
     <header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-3">
-                <div id="logo">
-                    <a href="index.html"><img src="img/logo.png" width="125" height="40" alt="Atena" data-retina="true"></a>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div id="logo">
+                        <a href="index.html"><img src="img/svg/hackneylogo_white.svg" height="40" alt="Hackney University" data-retina="true"></a>
+                    </div>
                 </div>
+                <nav class="col-md-9 col-sm-9 col-xs-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Mobile Menu</span></a>
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <img src="img/logo_mobile.png" width="125" height="40" alt="Hackney University" data-retina="true">
+                        </div>
+                        <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
+                        <ul>
+                            <!-- Programs Menu -->
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Academics <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="undergraduate.html">Undergraduate Programs</a></li>
+                                    <li><a href="graduate.html">Graduate Programs</a></li>
+                                    <li><a href="online.html">Online Learning</a></li>
+                                    <li><a href="non_degree.html">Non-Degree Programs</a></li>
+                                    <li><a href="calendar.html">Academic Calendar</a></li>
+                                </ul>
+                            </li>
+                            <!-- Admission Menu -->
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Admission <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="apply_online.html">Apply Online</a></li>
+                                    <li><a href="tuition.html">Tuition</a></li>
+                                    <li><a href="financial_aid.html">Financial Aid</a></li>
+                                    <li><a href="international.html">International Students</a></li>
+                                </ul>
+                            </li>
+                            <!-- Research &amp; Innovation Megamenu -->
+                            <li class="megamenu submenu">
+                                <a href="javascript:void(0);" class="show-submenu-mega">Research <i class="icon-down-open-mini"></i></a>
+                                <div class="menu-wrapper">
+                                    <div class="col-md-4">
+                                        <h3>Artificial Intelligence</h3>
+                                        <ul>
+                                            <li><a href="ai_center.html"><i class="icon-rocket"></i> AI Research Center</a></li>
+                                            <li><a href="ml_lab.html"><i class="icon-rocket"></i> Machine Learning Lab</a></li>
+                                            <li><a href="robotics.html"><i class="icon-rocket"></i> Robotics &amp; Automation</a></li>
+                                            <li><a href="ai_ethics.html"><i class="icon-rocket"></i> AI Ethics Initiative</a></li>
+                                            <li><a href="data_science.html"><i class="icon-rocket"></i> Data Science Collaborative</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3>Futurism &amp; Technology</h3>
+                                        <ul>
+                                            <li><a href="futurism.html"><i class="icon-rocket"></i> Futurism Research</a></li>
+                                            <li><a href="space_tech.html"><i class="icon-rocket"></i> Space Technologies</a></li>
+                                            <li><a href="sustainability.html"><i class="icon-rocket"></i> Sustainability Projects</a></li>
+                                            <li><a href="innovation_hub.html"><i class="icon-rocket"></i> Innovation Hub</a></li>
+                                            <li><a href="emerging_tech.html"><i class="icon-rocket"></i> Emerging Technologies</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3>Business &amp; Incubation</h3>
+                                        <ul>
+                                            <li><a href="startup_incubator.html"><i class="icon-rocket"></i> Startup Incubator</a></li>
+                                            <li><a href="business_accelerator.html"><i class="icon-rocket"></i> Business Accelerator</a></li>
+                                            <li><a href="entrepreneurship.html"><i class="icon-rocket"></i> Entrepreneurship Program</a></li>
+                                            <li><a href="industry_partnerships.html"><i class="icon-rocket"></i> Industry Partnerships</a></li>
+                                            <li><a href="kardashev_projects.html"><i class="icon-rocket"></i> Kardashev Scale Projects</a></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- End menu-wrapper -->
+                            </li>
+                            <!-- Campus Menu -->
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">Campus <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="campus.html">Overview</a></li>
+                                    <li><a href="campus_tour.html">Virtual Tour</a></li>
+                                    <li><a href="visit.html">Plan a Visit</a></li>
+                                    <li><a href="campus_life.html">Campus Life</a></li>
+                                </ul>
+                            </li>
+                            <!-- About Menu -->
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">About <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="about.html">Our Mission &amp; Vision</a></li>
+                                    <li><a href="history.html">History &amp; Legacy</a></li>
+                                    <li><a href="leadership.html">Leadership</a></li>
+                                    <li><a href="faculty.html">Faculty &amp; Staff</a></li>
+                                    <li><a href="chancellor_message.html">Chancellor&apos;s Message</a></li>
+                                </ul>
+                            </li>
+                            <!-- Login Modal -->
+                            <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
+                            <!-- Search -->
+                            <li><a href="#search" id="search_bt"><i class="icon-search"></i><span>Search</span></a></li>
+                        </ul>
+                    </div><!-- End main-menu -->
+                </nav>
             </div>
-            <nav class="col-md-9 col-sm-9 col-xs-9">
-            <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
-            <div class="main-menu">
-                <div id="header_menu">
-                    <img src="img/logo_mobile.png" width="125" height="40" alt="Atena" data-retina="true">
-                </div>
-                <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
-                <ul>
-                    <li class="submenu">
-                    <a href="javascript:void(0);" class="show-submenu">Home <i class="icon-down-open-mini"></i></a>
-                    <ul>
-                        <li><a href="index.html">Home Layer slider</a></li>
-                        <li><a href="index_2.html">Home Video</a></li>
-                        <li><a href="index_3.html">Home version 2</a></li>
-                        <li><a href="index_4.html">Home version 3</a></li>
-                        <li><a href="index_5.html">Home quick contact</a></li>
-                    </ul>
-                    </li>
-                    <li class="submenu">
-                    <a href="javascript:void(0);" class="show-submenu">Academic <i class="icon-down-open-mini"></i></a>
-                    <ul>
-                        <li><a href="diploma.html">Diploma courses</a></li>
-                        <li><a href="graduate.html">Graduate courses</a></li>
-                        <li><a href="master.html">Master courses</a></li>
-                        <li><a href="apply_online.html">Apply online</a></li>
-                        <li><a href="staff.html">Staff</a></li>
-                    </ul>
-                    </li>
-                    <li class="submenu">
-                    <a href="javascript:void(0);" class="show-submenu">About <i class="icon-down-open-mini"></i></a>
-                    <ul>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="contacts.html">Plan a visit</a></li>
-                        <li><a href="staff.html">Staff</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                    </li>
-                    <li class="megamenu submenu">
-                    <a href="javascript:void(0);" class="show-submenu-mega">Pages &amp; elements<i class="icon-down-open-mini"></i></a>
-                    <div class="menu-wrapper">
-                        <div class="col-md-4">
-                            <h3>Elements</h3>
-                            <ul>
-                                <li><a href="icon-pack-1.html"><i class="icon-inbox-alt"></i> Icon pack 1</a></li>
-                                <li><a href="icon-pack-2.html"><i class="icon-inbox-alt"></i> Icon pack 2</a></li>
-                                <li><a href="icon-pack-3.html"><i class="icon-inbox-alt"></i> Icon pack 3</a></li>
-                                <li><a href="icon-pack-4.html"><i class="icon-inbox-alt"></i> Icon pack 4</a></li>
-                                <li><a href="shortcodes.html"><i class="icon-tools"></i> Shortcodes</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h3>Pages</h3>
-                            <ul>
-                            	<li><a href="academic_single_course.html">Single course page</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contacts.html">Contacts</a></li>
-                                <li><a href="agenda_calendar.html">Agenda calendar</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h3>Pages</h3>
-                            <ul>
-                                <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
-                                <li><a href="#" data-toggle="modal" data-target="#register">Register</a></li>
-                                <li><a href="tour.html">Tour</a></li>
-                                <li><a href="site_launch/index.html">Site launch/Coming soon</a></li>
-                            </ul>
-                        </div>
-                    </div><!-- End menu-wrapper -->
-                    </li>
-                    <li><a href="tour.html">Tour</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
-                    <li><a href="#search" id="search_bt"><i class=" icon-search"></i><span>Search</span></a></li>
-                </ul>
-            </div>
-            <!-- End main-menu -->
-            </nav>
-        </div>
-    </div><!-- container -->
+        </div><!-- End container -->
     </header><!-- End Header -->
        
-        <div class="sub_header bg_1">
-        	<div id="intro_txt">
-			<h1>Online <strong>Apply</strong> course</h1>
-            <p>Ex saepe accusata duo, vel ne summo option delenit.</p>
-            </div>
-		</div> <!--End sub_header -->
- 
- 		<div class="container_gray_bg">
-        <div id="position">
-    	<div class="container">
-                	<ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Category</a></li>
-                    <li>Page active</li>
-                    </ul>
+    <div class="sub_header bg_1">
+        <div id="intro_txt">
+            <h1>Apply to <strong>Hackney University</strong></h1>
+            <p>Embark on your journey to unparalleled academic excellence and innovation.</p>
         </div>
-    </div><!-- Position -->
+    </div> <!-- End sub_header -->
+ 
+    <div class="container_gray_bg">
+        <div id="position">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li>Application</li>
+                </ul>
+            </div>
+        </div><!-- Position -->
         <div class="container margin_60">
- 		<div class="row">
+            <div class="row">
   
-           <div class="col-md-9">
-                	<div class="box_style_1">
-                    <form action="apply_online.php" id="apply_online" method="POST">
-                   	<div class="indent_title_in">
-                    <i class="pe-7s-user"></i>
-				<h3>Personal details</h3>
-				<p>Mussum ipsum cacilds, vidis litro abertis.</p>
-			</div>
-            	<div class="wrapper_indent">
-                        <div class="row">
-                        	<div class="col-md-6">
-                            	<div class="form-group"  >
-                                <label>First name</label>
-                                <input type="text" class="form-control styled required" id="name_apply" name="name_apply"  placeholder="First name">
+                <div class="col-md-9">
+                    <div class="box_style_1">
+                        <form action="apply_online.php" id="apply_online" method="POST">
+                            <div class="indent_title_in">
+                                <i class="pe-7s-user"></i>
+                                <h3>Personal Details</h3>
+                                <p>Please provide your personal information to begin your journey toward academic distinction at Hackney University.</p>
                             </div>
-                            </div>
-                            <div class="col-md-6">
-                            	<div class="form-group">
-                                <label>Last name</label> 
-                                <input type="text" class="form-control styled required" id="lastname_apply" name="lastname_apply" placeholder="Last name">
-                            </div>
-                            </div>
-                        </div><!-- End row -->
-                        <div class="row">
-                        	<div class="col-md-6">
-                            	<div class="form-group">
-                                <label>Email</label>
-                                <input type="email" class="form-control styled required" id="email_apply" name="email_apply" placeholder="youremail@domain.com">
-                            </div>
-                            </div>
-                            <div class="col-md-6">
-                            	<div class="form-group">
-                                <label>Phone number</label>
-                                <input type="text" class="form-control styled required" id="phone_apply" name="phone_apply" placeholder="+0043 XXX XXXXX">
-                            </div>
-                            </div>
-                        </div><!-- End row -->
-                        <div class="row">
-                        	<div class="col-md-6">
-                            	<div class="form-group">
-                                <label>Date of birth</label>
-                                <input type="text" class="form-control styled required" id="birth_apply" name="birth_apply"  placeholder="dd/mm/year">
-                            </div>
-                            </div>
-                            <div class="col-md-6">
-                            	<div class="form-group">
-                                <label>Gender</label><br>
-                                    <div class="radio_inline">
-                                    <input type="radio" name="gender_apply" id="gender_apply_male" class="required" value="Male"><label style="margin-right:20px;">Male</label>
-                                    <input type="radio" name="gender_apply" id="gender_apply_female" class="required" value="Female"><label>Female</label>
+                            <div class="wrapper_indent">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>First name</label>
+                                            <input type="text" class="form-control styled required" id="name_apply" name="name_apply" placeholder="First name">
+                                        </div>
                                     </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Last name</label> 
+                                            <input type="text" class="form-control styled required" id="lastname_apply" name="lastname_apply" placeholder="Last name">
+                                        </div>
+                                    </div>
+                                </div><!-- End row -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="email" class="form-control styled required" id="email_apply" name="email_apply" placeholder="youremail@domain.com">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Phone number</label>
+                                            <input type="text" class="form-control styled required" id="phone_apply" name="phone_apply" placeholder="+0043 XXX XXXXX">
+                                        </div>
+                                    </div>
+                                </div><!-- End row -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Date of birth</label>
+                                            <input type="text" class="form-control styled required" id="birth_apply" name="birth_apply" placeholder="dd/mm/yyyy">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Gender</label><br>
+                                            <div class="radio_inline">
+                                                <input type="radio" name="gender_apply" id="gender_apply_male" class="required" value="Male"><label style="margin-right:20px;">Male</label>
+                                                <input type="radio" name="gender_apply" id="gender_apply_female" class="required" value="Female"><label>Female</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- End row -->
                             </div>
+                            <hr class="styled_2">
+                            <div class="indent_title_in">
+                                <i class="pe-7s-map-marker"></i>
+                                <h3>Address</h3>
+                                <p>Kindly share your current address so that we can keep you informed of exclusive opportunities and upcoming campus events.</p>
                             </div>
-                        </div><!-- End row -->
-                      </div>
-                      <hr class="styled_2">
-                      <div class="indent_title_in">
-                    <i class="pe-7s-map-marker"></i>
-				<h3>Address</h3>
-				<p>Mussum ipsum cacilds, vidis litro abertis.</p>
-			</div>
-            	<div class="wrapper_indent">
-                  
-                   
-                    <div class="row">
-                        	<div class="col-md-6">
-                            	<div class="form-group">
-                                <label>Address line</label>
-                                <input type="text" class="form-control styled required" id="address_apply" name="address_apply" placeholder="Your full address">
+                            <div class="wrapper_indent">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Address line</label>
+                                            <input type="text" class="form-control styled required" id="address_apply" name="address_apply" placeholder="Your full address">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>City</label>
+                                            <input type="text" class="form-control styled required" id="town_apply" name="town_apply" placeholder="Town">
+                                        </div>
+                                    </div>
+                                </div><!-- End row -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Country</label>
+                                        <div class="styled-select">
+                                            <select class="form-control required" name="country_apply" id="country_apply">
+                                                <option value="" selected>Select your country</option>
+                                                <option value="Europe">Europe</option>
+                                                <option value="Asia">Asia</option>
+                                                <option value="North America">North America</option>
+                                                <option value="South America">South America</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Postal Code</label>
+                                            <input type="text" class="form-control styled required" id="postal_code_apply" name="postal_code_apply" placeholder="001238">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <hr class="styled_2">
+                            <div class="indent_title_in">
+                                <i class="pe-7s-study"></i>
+                                <h3>Course Preferences</h3>
+                                <p>Select the program level and area of study that best aligns with your academic and professional aspirations at Hackney University.</p>
+                              </div>
+                              <div class="wrapper_indent">
+                                <div class="row list_courses_apply">
+                                  <div class="col-md-4">
+                                    <h4>Bachelor</h4>
+                                    <ul>
+                                      <li>
+                                        <label><input type="checkbox" name="apply_course[]" id="bachelor_cs" value="Bachelor - Computer Science" required>Computer Science</label>
+                                      </li>
+                                      <li>
+                                        <label><input type="checkbox" name="apply_course[]" id="bachelor_ht" value="Bachelor - Hospitality &amp; Tourism">Hospitality &amp; Tourism</label>
+                                      </li>
+                                      <li>
+                                        <label><input type="checkbox" name="apply_course[]" id="bachelor_hr" value="Bachelor - Human Resources">Human Resources</label>
+                                      </li>
+                                      <li>
+                                        <label><input type="checkbox" name="apply_course[]" id="bachelor_ed" value="Bachelor - Education">Education</label>
+                                      </li>
+                                      <li>
+                                        <label><input type="checkbox" name="apply_course[]" id="bachelor_bm" value="Bachelor - Business Management">Business Management</label>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <h4>Masters</h4>
+                                    <ul>
+                                      <li>
+                                        <label><input type="checkbox" name="apply_course[]" id="masters_cs" value="Masters - Computer Science" required>Computer Science</label>
+                                      </li>
+                                      <li>
+                                        <label><input type="checkbox" name="apply_course[]" id="masters_ht" value="Masters - Hospitality &amp; Tourism">Hospitality &amp; Tourism</label>
+                                      </li>
+                                      <li>
+                                        <label><input type="checkbox" name="apply_course[]" id="masters_hr" value="Masters - Human Resources">Human Resources</label>
+                                      </li>
+                                      <li>
+                                        <label><input type="checkbox" name="apply_course[]" id="masters_ed" value="Masters - Education">Education</label>
+                                      </li>
+                                      <li>
+                                        <label><input type="checkbox" name="apply_course[]" id="masters_bm" value="Masters - Business Management">Business Management</label>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <h4>Doctorate</h4>
+                                    <ul>
+                                      <li>
+                                        <label><input type="checkbox" name="apply_course[]" id="doctorate_cs" value="Doctorate - Computer Science" required>Computer Science</label>
+                                      </li>
+                                      <li>
+                                        <label><input type="checkbox" name="apply_course[]" id="doctorate_ht" value="Doctorate - Hospitality &amp; Tourism">Hospitality &amp; Tourism</label>
+                                      </li>
+                                      <li>
+                                        <label><input type="checkbox" name="apply_course[]" id="doctorate_hr" value="Doctorate - Human Resources">Human Resources</label>
+                                      </li>
+                                      <li>
+                                        <label><input type="checkbox" name="apply_course[]" id="doctorate_ed" value="Doctorate - Education">Education</label>
+                                      </li>
+                                      <li>
+                                        <label><input type="checkbox" name="apply_course[]" id="doctorate_bm" value="Doctorate - Business Management">Business Management</label>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            <hr class="styled_2">
+                            <div class="wrapper_indent">
+                                <div class="form-group">
+                                    <input type="checkbox" name="policy_terms" id="policy_terms" class="required" value="Yes">
+                                    <label>I accept <a href="#0">terms and conditions</a> and the general policy.</label>
+                                </div>
+                                <p><button type="submit" class="button">Submit</button></p>
                             </div>
-                            <div class="col-md-6">
-                            	<div class="form-group">
-                                <label>City</label>
-                                <input type="text" class="form-control styled required" id="town_apply" name="town_apply" placeholder="Town">
-                            </div>
-                            </div>
-                        </div><!-- End row -->
-                        
-                         <div class="row">
-                   	<div class="col-md-6">
-                                <label>Country</label>
-                                <div class="styled-select">
-								<select class="form-control required" name="country_apply" id="country_apply" >
-									<option value="" selected>Select your country</option>
-									<option value="Europe">Europe</option>
-									<option value="Asia">Asia</option>
-									<option value="North America">North America</option>
-									<option value="South America">South America</option>
-								</select>
-							</div>
-                            </div>
-                            <div class="col-md-3">
-                            <div class="form-group">
-                                <label>Postal Code</label>
-                                <input type="text" class="form-control styled required" id="postal_code_apply" name="postal_code_apply" placeholder="001238">
-                            </div>
-                           </div>
-                   </div>
-                        
-                        
-                      </div>
-                      <hr class="styled_2">
-                      <div class="indent_title_in">
-                    <i class="pe-7s-study"></i>
-				<h3>Course preferences</h3>
-				<p>Mussum ipsum cacilds, vidis litro abertis.</p>
-			</div>
-            	<div class="wrapper_indent">
-                    <div class="row list_courses_apply">
-                    	<div class="col-md-4">
-                        	<h4>Diploma courses</h4>
-                            <ul>
-                            <li>
-                                <label><input type="checkbox" name="apply_course[]" id="mathematics_apply" value="Mathematics diploma" required minlength="1">Mathematics</label>
-                            </li>
-                            <li>
-                                <label><input type="checkbox" name="apply_course[]" id="sciences_apply" value="Sciences diploma">Sciences</label>
-                            </li>
-                            <li>
-                                <label><input type="checkbox" name="apply_course[]" id="litterature_apply" value="Litterature diploma">Litterature</label>
-                            </li>
-                            <li>
-                                <label><input type="checkbox" name="apply_course[]" id="arts_apply" value="Arts diploma">Arts</label>
-                            </li>
-                            <li>
-                                <label><input type="checkbox" name="apply_course[]" id="music_apply" value="Music diploma">Music</label>
-                            </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                        <h4>Graduate courses</h4>
-                          <ul>
-                            <li>
-                                <label><input type="checkbox" name="apply_course[]" id="engineering_apply" value="Engineering graduate">Engineering</label>
-                            </li>
-                            <li>
-                                <label><input type="checkbox" name="apply_course[]" id="biology_apply" value="Biology graduate">Biology</label>
-                            </li>
-                            <li>
-                                <label><input type="checkbox" name="apply_course[]" id="psycology_apply" value="Psycology graduate">Psycology</label>
-                            </li>
-                            <li>
-                                <label><input type="checkbox" name="apply_course[]" id="economy_apply" value="Economy graduate">Economy</label>
-                            </li>
-                            <li>
-                                <label><input type="checkbox" name="apply_course[]" id="architecture_apply" value="Architecture graduate">Architecture</label>
-                            </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                        	<h4>Master courses</h4>
-                              <ul>
-                            <li>
-                                <label><input type="checkbox" name="apply_course[]" id="it_apply" value="Information tecnology graduate">Information tecnology</label>
-                            </li>
-                            <li>
-                                <label><input type="checkbox" name="apply_course[]" id="digital_apply" value="Dgital media graduate">Digital media</label>
-                            </li>
-                            <li>
-                                <label><input type="checkbox" name="apply_course[]" id="sculpture_apply" value="Sculpture graduate">Sculpture</label>
-                            </li>
-                            </ul>
-                        </div>
+                        </form>
                     </div>
+                </div>
+                <div class="col-md-3">
+                    <h4><strong>How to Apply</strong></h4>
+                    <p>Our refined application process is designed to honor your academic journey. Follow the guidelines below to join our esteemed community of scholars.</p>
                     
-                    
-                      </div>
-                      
-                      <hr class="styled_2">
-                      
-                      <div class="wrapper_indent">
-                      <div class="form-group">
-					<input type="checkbox" name="policy_terms" id="policy_terms" class="required" value="Yes"><label>I accept <a href="#0">terms and conditions</a> and general policy.</label>
-				</div>
-                     <p><button type="submit"  class="button">Submit</button></p>
-                      </div>
-                      </form>
-                    </div>
-           </div>
-           <div class="col-md-3">
-           		
-                      <h4><strong>How to apply</strong></h4>
-                    <p>Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius. Te pri facete latine salutandi, scripta mediocrem et sed, cum.</p>
-                   
-                    <div class="box_side"><h5>By Phone</h5> <i class="icon-phone"></i>
-                    <p> + 0043 848293 43<br><small>Monday to Friday 9.00am - 6.00pm</small></p>
+                    <div class="box_side">
+                        <h5>By Phone</h5> 
+                        <i class="icon-phone"></i>
+                        <p>+0043 848293 43<br>
+                        <small>Monday to Friday, 9:00 AM &amp;ndash; 6:00 PM</small></p>
                     </div>
              
-                    <div class="box_side"><h5>By Postal Mail</h5> <i class="icon_pencil-edit"></i>
-                    <p><a href="#0"><strong>Download the application form</strong></a>,<br> and send it to this address:<br><br><em>4 West 31st Street New York<br>
-10001 United States</em></p>
-</div>
- <hr class="styled">
-                    <div class="box_side"><h4>Plan a visit</h4> <i class="icon_pencil-edit"></i>
-                    <p>Per eu esse deleniti scripserit, sed ut nihil inimicus sadipscing. Eu iusto ignota officiis sit, nullam ullamcorper eam ut. </p>
-                    <a href="#0" class="button small">Plan a visit</a>
-</div>
-
-           </div>
-            </div><!--End row -->
-        </div><!--End container -->
-        </div><!--End container_gray_bg -->
+                    <div class="box_side">
+                        <h5>By Postal Mail</h5> 
+                        <i class="icon_pencil-edit"></i>
+                        <p>
+                            <a href="#0"><strong>Download the official application form</strong></a>, complete it and send it to the address below:<br><br>
+                            <em>4 West 31st Street<br>
+                            New York, NY 10001<br>
+                            United States</em>
+                        </p>
+                    </div>
+                    <hr class="styled">
+                    <div class="box_side">
+                        <h4>Plan a Visit</h4> 
+                        <i class="icon_pencil-edit"></i>
+                        <p>We welcome you to experience Hackney University firsthand. Schedule a visit to tour our magnificent campus, explore state-of-the-art facilities, and meet our distinguished faculty.</p>
+                        <a href="#0" class="button small">Plan a Visit</a>
+                    </div>
+                </div>
+            </div><!-- End row -->
+        </div><!-- End container -->
+    </div><!-- End container_gray_bg -->
   
-  		<div class="container margin_60">
-         <div class="main_title">
-    <h2>Frequently questions</h2>
-    <p>Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.</p>
-    </div>
-        	<div class="row">
-            <div class="col-md-4">
-            <div class="box_style_2">
-            	<h4>Et ius tota recusabo democritum?</h4>
-                 <p>Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius. Te pri facete latine salutandi, scripta mediocrem et sed, cum ne mundi vulputate. Ne his sint graeco detraxit, posse exerci volutpat has in.</p>
-             </div>
-            </div>
-            <div class="col-md-4">
-            <div class="box_style_2">
-            	<h4>Posse exerci volutpat has?</h4>
-                <p>Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius. Te pri facete latine salutandi, scripta mediocrem et sed, cum ne mundi vulputate. Ne his sint graeco detraxit, posse exerci volutpat has in.</p>
-             </div>
-            </div>
-            <div class="col-md-4">
-            <div class="box_style_2">
-            	<h4>Te pri facete latine salutandi?</h4>
-                <p>Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius. Te pri facete latine salutandi, scripta mediocrem et sed, cum ne mundi vulputate. Ne his sint graeco detraxit, posse exerci volutpat has in.</p>
-             </div>
-            </div>
-        </div><!--End row -->
+    <div class="container margin_60">
+        <div class="main_title">
+            <h2>Frequently Asked Questions</h2>
+            <p>Find answers to common queries about our admissions process and learn how you can join the legacy of excellence at Hackney University.</p>
+        </div>
         <div class="row">
             <div class="col-md-4">
-            <div class="box_style_2">
-            	<h4>Et ius tota recusabo democritum?</h4>
-                <p>Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius. Te pri facete latine salutandi, scripta mediocrem et sed, cum ne mundi vulputate. Ne his sint graeco detraxit, posse exerci volutpat has in.</p>
-             </div>
+                <div class="box_style_2">
+                    <h4>What are the admission criteria?</h4>
+                    <p>Applicants are evaluated on academic merit, passion for learning, and their potential to contribute to our storied tradition of excellence.</p>
+                </div>
             </div>
             <div class="col-md-4">
-            <div class="box_style_2">
-            	<h4>Mediocritatem sea ex, nec id agam?</h4>
-                <p>Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius. Te pri facete latine salutandi, scripta mediocrem et sed, cum ne mundi vulputate. Ne his sint graeco detraxit, posse exerci volutpat has in.</p>
-             </div>
+                <div class="box_style_2">
+                    <h4>How does Hackney University foster academic success?</h4>
+                    <p>Our comprehensive support system encompasses personalized advising, state-of-the-art resources, and a vibrant community that nurtures intellectual growth.</p>
+                </div>
             </div>
             <div class="col-md-4">
-            <div class="box_style_2">
-            	<h4>Te pri facete latine salutandi?</h4>
-                <p>Zril causae ancillae sit ea. Dicam veritus mediocritatem sea ex, nec id agam eius. Te pri facete latine salutandi, scripta mediocrem et sed, cum ne mundi vulputate. Ne his sint graeco detraxit, posse exerci volutpat has in.</p>
-             </div>
+                <div class="box_style_2">
+                    <h4>Can I visit the campus?</h4>
+                    <p>Absolutely. Prospective students are welcome to tour our campus and experience the enriching environment and distinguished heritage of Hackney University.</p>
+                </div>
             </div>
-        </div><!--End row -->
-        </div><!--End container -->
+        </div><!-- End row -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box_style_2">
+                    <h4>What financial aid options are available?</h4>
+                    <p>We offer a diverse range of scholarships and financial support programs tailored to empower the academic ambitions of our exceptional students.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box_style_2">
+                    <h4>What criteria do you use in the selection process?</h4>
+                    <p>Our admissions process considers academic excellence, extracurricular achievements, and the potential to make a meaningful impact on society.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box_style_2">
+                    <h4>How long does the application review process take?</h4>
+                    <p>Our review process is thorough yet efficient, typically completed within a few weeks so that every application receives the personalized attention it deserves.</p>
+                </div>
+            </div>
+        </div><!-- End row -->
+    </div><!-- End container -->
         
-	<div class=" container_gray_line" id="newsletter_container">
+    <div class="container_gray_line" id="newsletter_container">
         <div class="container margin_60">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
-                    <h3>Subscribe to our Newsletter for latest news.</h3>
+                    <h3>Subscribe to the Latest News from Hackney University</h3>
                     <div id="message-newsletter"></div>
                     <form method="post" action="assets/newsletter.php" name="newsletter" id="newsletter" class="form-inline">
                         <input name="email_newsletter" id="email_newsletter" type="email" value="" placeholder="Your Email" class="form-control">
-                        <button id="submit-newsletter" class="button"> Subscribe</button>
+                        <button id="submit-newsletter" class="button">Subscribe</button>
                     </form>
                 </div>
             </div>
         </div>
-       </div><!-- End newsletter_container -->
+    </div><!-- End newsletter_container -->
 	
-	<footer>
+    <footer>
         <div class="container">
             <div class="row ">
                 <div class="col-md-3 col-sm-3">
                     <p id="logo_footer">
-                        <img src="img/logo.png" width="125" height="40" alt="Atena" data-retina="true">
+                        <img src="img/logo.png" width="125" height="40" alt="Hackney University" data-retina="true">
                     </p>
                 </div>
                 <div class="col-md-3 col-sm-3">
                     <h4>About</h4>
                     <ul>
-                        <li><a href="#">About us</a></li>
+                        <li><a href="#">About Us</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Login</a></li>
                         <li><a href="#">Register</a></li>
-                        <li><a href="#">Terms and condition</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-3">
                     <h4>Academic</h4>
                     <ul>
-                        <li><a href="#">Plans of study</a></li>
+                        <li><a href="#">Programs</a></li>
                         <li><a href="#">Courses</a></li>
                         <li><a href="#">Admissions</a></li>
-                        <li><a href="#">Staff</a></li>
-                        <li><a href="#">Students</a></li>
+                        <li><a href="#">Faculty</a></li>
+                        <li><a href="#">Student Life</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-3">
-                    <h4>Contact us</h4>
+                    <h4>Contact Us</h4>
                     <ul>
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Plan a visit</a></li>
+                        <li><a href="#">Contact Info</a></li>
+                        <li><a href="#">Plan a Visit</a></li>
                     </ul>
                     <ul id="contacts_footer">
                         <li>Info line - <a href="tel://033284322">+0332 84322456</a></li>
-                        <li>Email - <a href="#">info@hackneyuniversity.org</a> / <a href="#">office@hackneyuniversity.org</a></li>
+                        <li>Email - <a href="mailto:info@hackneyuniversity.org">info@hackneyuniversity.org</a> / <a href="mailto:office@hackneyuniversity.org">office@hackneyuniversity.org</a></li>
                     </ul>
                 </div>
             </div><!-- End row -->
         </div><!-- End container -->
-        </footer><!-- End footer -->
-        <div id="copy">
-            <div class="container">
-                 © <a href="https://taofruit.com" target="_blank">Tao Fruit</a> - All rights reserved.
-            </div>
-        </div><!-- End copy -->    
-    
+    </footer><!-- End footer -->
+    <div id="copy">
+        <div class="container">
+             &copy; Hackney University - All rights reserved.
+        </div>
+    </div><!-- End copy -->
+
 <!-- Login modal -->   
 <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myLogin" aria-hidden="true">
 		<div class="modal-dialog">
@@ -514,7 +536,7 @@
 <div id="search">
     <button type="button" class="close">×</button>
     <form>
-        <input type="search" value="" placeholder="type keyword(s) here" >
+        <input type="search" value="" placeholder="type keyword(s) here">
         <button type="submit" class="button">Search</button>
     </form>
 </div>
@@ -531,10 +553,10 @@
 $('input').iCheck({
    checkboxClass: 'icheckbox_square-blue',
    radioClass: 'iradio_square-blue'
- });
- </script>
- <script src="js/jquery.validate.js"></script>
- <script>
+});
+</script>
+<script src="js/jquery.validate.js"></script>
+<script>
   $("#apply_online").validate();
 </script>
 </body>
