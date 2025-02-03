@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content="college, campus, university, cost calculator, tuition, Hackney University">
+      <meta name="description" content="Hackney University Cost Calculator">
+      <meta name="author" content="Hackney University">
+      <title>International Students | Hackney University</title>
+    
+      <!-- Favicons-->
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+      <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+      <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+      <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+      <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+    
+      <!-- BASE CSS -->
+      <link href="css/main_font/main_font.css" rel="stylesheet">
+      <link href="css/animate.min.css" rel="stylesheet">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/menu.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/responsive.css" rel="stylesheet">
+      <link href="css/elegant_font/elegant_font.min.css" rel="stylesheet">
+      <link href="css/icon_font/pe-icon-7-stroke.min.css" rel="stylesheet">
+      <link href="css/fontello/css/fontello.min.css" rel="stylesheet">
+      <link href="css/edu_fonts/edu_fonts.min.css" rel="stylesheet">
+      <link href="css/magnific-popup.css" rel="stylesheet">
+    
+      <!-- CUSTOM CSS -->
+      <link href="css/custom.css" rel="stylesheet">
+      
+      <style>
+        /* Additional styling for our cost calculator page */
+        .cost-result { background: #f8f8f8; border: 1px solid #ddd; padding: 20px; margin-top: 20px; }
+        .cost-result h3 { margin-top: 0; }
+        .form-group { margin-bottom: 20px; }
+      </style>
+    </head>
+    
+    <body>
+    
+    <div id="preloader">
+      <div class="pulse"></div>
+    </div>
+    <!-- End Preloader -->
+    
+    <!-- Header (using Hackney University template) -->
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-3">
+            <div id="logo">
+              <a href="index.html"><img src="img/svg/hackneylogo_white.svg" height="40" alt="Hackney University" data-retina="true"></a>
+            </div>
+          </div>
+          <nav class="col-md-9 col-sm-9 col-xs-9">
+            <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Mobile Menu</span></a>
+            <div class="main-menu">
+              <div id="header_menu">
+                <img src="img/logo_mobile.png" width="125" height="40" alt="Hackney University" data-retina="true">
+              </div>
+              <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
+              <ul>
+                <li class="submenu">
+                  <a href="javascript:void(0);" class="show-submenu">Academics <i class="icon-down-open-mini"></i></a>
+                  <ul>
+                    <li><a href="undergraduate.html">Undergraduate Programs</a></li>
+                    <li><a href="graduate.html">Graduate Programs</a></li>
+                    <li><a href="online.html">Online Learning</a></li>
+                    <li><a href="non_degree.html">Non-Degree Programs</a></li>
+                    <li><a href="calendar.html">Academic Calendar</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a href="javascript:void(0);" class="show-submenu">Admission <i class="icon-down-open-mini"></i></a>
+                  <ul>
+                    <li><a href="apply_online.html">Apply Online</a></li>
+                    <li><a href="tuition.html">Tuition</a></li>
+                    <li><a href="financial_aid.html">Financial Aid</a></li>
+                    <li><a href="international.html">International Students</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a href="javascript:void(0);" class="show-submenu">Campus <i class="icon-down-open-mini"></i></a>
+                  <ul>
+                    <li><a href="campus.html">Overview</a></li>
+                    <li><a href="campus_tour.html">Virtual Tour</a></li>
+                    <li><a href="visit.html">Plan a Visit</a></li>
+                    <li><a href="campus_life.html">Campus Life</a></li>
+                  </ul>
+                </li>
+                <li class="submenu">
+                  <a href="javascript:void(0);" class="show-submenu">About <i class="icon-down-open-mini"></i></a>
+                  <ul>
+                    <li><a href="about.html">Our Mission &amp; Vision</a></li>
+                    <li><a href="history.html">History &amp; Legacy</a></li>
+                    <li><a href="leadership.html">Leadership</a></li>
+                    <li><a href="faculty.html">Faculty &amp; Staff</a></li>
+                    <li><a href="chancellor_message.html">Chancellor&apos;s Message</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
+                <li><a href="#search" id="search_bt"><i class="icon-search"></i><span>Search</span></a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- End row -->
+      </div>
+      <!-- End container-fluid -->
+    </header>
+    <!-- End Header -->
+    
+    <!-- Sub Header -->
+    <div class="sub_header bg_1">
+      <div id="intro_txt">
+        <h1><strong>International Students</strong></h1>
+        <p>Welcome to Hackney University – where global education and cultural diversity shape the future.</p>
+      </div>
+    </div>
+    <!-- End Sub Header -->
+
+
+<!-- Breadcrumb -->
+<div id="position">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li>International Students</li>
+    </ul>
+  </div>
+</div><!-- End Position -->
+
+<div class="container margin_60">
+
+  <!-- Welcome Message -->
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="main_title">Welcome, International Students!</h2>
+      <p>
+        At Hackney University, we take pride in welcoming students from every corner of the world. Our commitment to diversity, global excellence, and personalized support ensures your transition into university life is both smooth and rewarding.
+      </p>
+    </div>
+  </div>
+
+  <!-- Why Choose Hackney University? -->
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Why Choose Hackney University?</h3>
+      <ul class="list_style_1">
+        <li><i class="icon_check_alt2"></i> World-renowned education and research opportunities</li>
+        <li><i class="icon_check_alt2"></i> Culturally diverse and inclusive campus community</li>
+        <li><i class="icon_check_alt2"></i> Dedicated international student support &amp; counseling</li>
+        <li><i class="icon_check_alt2"></i> Generous scholarship and financial aid options</li>
+        <li><i class="icon_check_alt2"></i> Comprehensive career and internship programs</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Application Process with Print Button -->
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Application Process</h3>
+      <p>Follow these simple steps to join our vibrant international community:</p>
+      <ol>
+        <li>Submit your online application through our <a href="apply_online.html">Application Portal</a>.</li>
+        <li>Upload your required documents and academic transcripts.</li>
+        <li>Wait for an invitation to an interview or admission test.</li>
+        <li>Receive your acceptance letter and next steps from our international office.</li>
+      </ol>
+      <button class="button" onclick="window.print()">Print Application Steps</button>
+    </div>
+  </div>
+
+  <!-- Visa and Immigration Support (Accordion) -->
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Visa and Immigration Support</h3>
+      <div class="panel-group" id="visaAccordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#visaAccordion" href="#visaCollapseOne">Visa Requirements &amp; Application Tips <i class="indicator icon_minus_alt2 pull-right"></i></a>
+            </h4>
+          </div>
+          <div id="visaCollapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <p>
+                Our international office provides detailed guidance on securing your student visa including document checklists, interview preparation, and application procedures. Visit the <a href="https://www.gov.uk/browse/visas-immigration" target="_blank">UK Government website</a> for more details.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#visaAccordion" href="#visaCollapseTwo">Additional Immigration Support <i class="indicator icon_plus_alt2 pull-right"></i></a>
+            </h4>
+          </div>
+          <div id="visaCollapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>
+                Our advisors are on hand to help you understand all the necessary steps for a successful visa application process. Explore our <a href="international_support.html" target="_blank">support resources</a> for further assistance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Panel Group -->
+    </div>
+  </div>
+
+  <!-- Student Life Carousel -->
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Student Life at Hackney University</h3>
+      <div id="campusCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#campusCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#campusCarousel" data-slide-to="1"></li>
+          <li data-target="#campusCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="https://picsum.photos/800/400?random=2" alt="Campus Life 1" class="img-responsive">
+            <div class="carousel-caption">
+              <h4>Vibrant Campus Life</h4>
+            </div>
+          </div>
+          <div class="item">
+            <img src="https://picsum.photos/800/400?random=3" alt="Campus Life 2" class="img-responsive">
+            <div class="carousel-caption">
+              <h4>Cultural Events &amp; Clubs</h4>
+            </div>
+          </div>
+          <div class="item">
+            <img src="https://picsum.photos/800/400?random=4" alt="Campus Life 3" class="img-responsive">
+            <div class="carousel-caption">
+              <h4>Diverse Student Community</h4>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#campusCarousel" data-slide="prev">
+            <i class="icon-left-open"></i>
+        </a>
+        <a class="right carousel-control" href="#campusCarousel" data-slide="next">
+            <i class="icon-right-open"></i>
+        </a>
+      </div><!-- End Carousel -->
+    </div>
+  </div>
+
+  <!-- Support Services using Tabs -->
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Support Services</h3>
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="#language" role="tab" data-toggle="tab">Language Support</a></li>
+        <li><a href="#housing" role="tab" data-toggle="tab">Housing Assistance</a></li>
+        <li><a href="#counsel" role="tab" data-toggle="tab">Counseling &amp; Wellness</a></li>
+      </ul>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="language">
+          <p>Our language support programs ensure that every international student can adjust academically and socially. Conversations, writing workshops and coaching sessions are available.</p>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="housing">
+          <p>We assist in finding suitable housing options that meet your needs, whether on-campus or off-campus, and guide you through the leasing process.</p>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="counsel">
+          <p>Our counseling and wellness center offers professional support to help you adjust and thrive in a new cultural environment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Slider -->
+  <div class="row">
+    <div class="col-md-12">
+      <h3>What Our International Students Say</h3>
+      <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="item active">
+            <blockquote class="styled">
+              <p>"Hackney University has been a life-changing experience, both academically and personally. The international community here is incredibly supportive." </p>
+              <small>Maria, <cite title="">Brazil</cite></small>
+            </blockquote>
+          </div>
+          <div class="item">
+            <blockquote class="styled">
+              <p>"The university’s dedication to diversity and global education really shines through in every aspect of campus life." </p>
+              <small>Ahmed, <cite title="">Egypt</cite></small>
+            </blockquote>
+          </div>
+          <div class="item">
+            <blockquote class="styled">
+              <p>"I felt welcomed from day one and the support services made my transition seamless." </p>
+              <small>Sofia, <cite title="">Spain</cite></small>
+            </blockquote>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#testimonialCarousel" data-slide="prev">
+          <i class="icon-left-open"></i>
+        </a>
+        <a class="right carousel-control" href="#testimonialCarousel" data-slide="next">
+          <i class="icon-right-open"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call to Action Section -->
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3>Ready to Begin Your International Journey?</h3>
+      <p>
+        Click below to access our application portal, contact our international office, or download our comprehensive guide for international students.
+      </p>
+      <a href="apply_online.html" class="button">Apply Now</a>
+      <a href="contact.html" class="button">Contact International Office</a>
+      <a href="downloads/international_guide.pdf" class="button" target="_blank">Download Guide</a>
+    </div>
+  </div>
+
+  <!-- FAQ Section using Accordion -->
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Frequently Asked Questions</h3>
+      <div class="panel-group" id="faqAccordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq1" class="accordion-toggle">What are the tuition fees for international students? <i class="indicator icon_plus_alt2 pull-right"></i></a>
+            </h4>
+          </div>
+          <div id="faq1" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Visit our <a href="tuition.html">Tuition Fees</a> page for a detailed breakdown of costs.</p>
+            </div>
+          </div>
+        </div><!-- End panel -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq2" class="accordion-toggle">Are there scholarships available for international students? <i class="indicator icon_plus_alt2 pull-right"></i></a>
+            </h4>
+          </div>
+          <div id="faq2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Yes, we offer a range of scholarships. See our <a href="scholarships.html">Scholarships</a> page for details.</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- End FAQ Panel Group -->
+    </div>
+  </div>
+
+  <!-- Structured Tuition Fees Table -->
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Tuition &amp; Application Deadlines</h3>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered table-condensed">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Program Type</th>
+              <th>Tuition Fee (per annum)</th>
+              <th>Application Deadline</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Undergraduate</td>
+              <td>$20,000</td>
+              <td>31st May</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Graduate</td>
+              <td>$25,000</td>
+              <td>30th June</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Doctorate</td>
+              <td>$30,000</td>
+              <td>15th July</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Non-Degree</td>
+              <td>$10,000</td>
+              <td>Rolling</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Have Questions? Get in Touch</h3>
+      <form id="international_contact" method="POST" action="assets/contact_international.php">
+        <div class="row">
+          <div class="col-md-4">
+             <div class="form-group">
+               <label>Name</label>
+               <input type="text" class="form-control styled required" id="name_contact" name="name_contact" placeholder="Your Name">
+             </div>
+          </div>
+          <div class="col-md-4">
+             <div class="form-group">
+               <label>Email</label>
+               <input type="email" class="form-control styled required" id="email_contact" name="email_contact" placeholder="youremail@domain.com">
+             </div>
+          </div>
+          <div class="col-md-4">
+             <div class="form-group">
+               <label>Phone</label>
+               <input type="text" class="form-control styled" id="phone_contact" name="phone_contact" placeholder="+0043 XXX XXXXX">
+             </div>
+          </div>
+        </div>
+        <div class="form-group">
+           <label>Message</label>
+           <textarea class="form-control styled required" id="message_contact" name="message_contact" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="button" id="submit-contact">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+</div><!-- End Container -->
+
+<!-- Language Selector (positioned in footer area for this example) -->
+<div class="container_gray_line" id="language_selector">
+  <div class="container margin_60">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <label for="selectLanguage">Select Language:</label>
+        <select id="selectLanguage" class="styled-select">
+           <option value="en" selected>English</option>
+           <option value="es">Español</option>
+           <option value="fr">Français</option>
+           <option value="de">Deutsch</option>
+           <option value="zh">中文</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div><!-- End Language Selector -->
+
+<!-- Footer (reuse standard footer) -->
+<footer>
+  <div class="container">
+    <div class="row ">
+      <div class="col-md-3 col-sm-3">
+        <p id="logo_footer">
+          <img src="img/logo.png" width="125" height="40" alt="Hackney University" data-retina="true">
+        </p>
+      </div>
+      <div class="col-md-3 col-sm-3">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-3">
+        <h4>Academic</h4>
+        <ul>
+          <li><a href="#">Programs</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">Faculty</a></li>
+          <li><a href="#">Student Life</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-3">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="#">Contact Info</a></li>
+          <li><a href="#">Plan a Visit</a></li>
+        </ul>
+        <ul id="contacts_footer">
+          <li>Info line - <a href="tel://033284322">+0332 84322456</a></li>
+          <li>Email - <a href="mailto:info@hackneyuniversity.org">info@hackneyuniversity.org</a></li>
+        </ul>
+      </div>
+    </div><!-- End row -->
+  </div><!-- End container -->
+</footer><!-- End Footer -->
+
+<div id="copy">
+  <div class="container">
+       &copy; Hackney University - All rights reserved.
+  </div>
+</div><!-- End copy -->
+
+<!-- Login, Register and Search modals here (omitted for brevity) -->
+
+<!-- Common scripts -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/common_scripts_min.js"></script>
+<script src="js/functions.js"></script>
+<script src="assets/validate.js"></script>
+<script src="js/jquery.validate.js"></script>
+<!-- New translator JS -->
+<script src="js/translate.js"></script>
+<!-- Initialize any additional scripts (for carousel, accordions, etc. are automatically handled by Bootstrap) -->
+<script>
+  // Example: Initialize Magnific Popup (if used)
+  $('.magnific-popup').magnificPopup({type:'image'});
+</script>
+</body>
+</html>

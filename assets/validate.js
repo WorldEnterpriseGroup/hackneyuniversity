@@ -107,6 +107,31 @@ jQuery(document).ready(function(){
 
 	});
 		});
+
+// Additional block for validating and submitting the Apply form
+jQuery(document).ready(function(){
+
+	$('#apply_online').submit(function(){
+
+		var action = $(this).attr('action');
+
+		$("#message-apply").slideUp(750, function() {
+			$('#message-apply').hide();
+
+			$('#submit-apply')
+				.after('<i class="icon-spin4 animate-spin loader"></i>')
+				.attr('disabled','disabled');
+
+            // The form submission is handled by our new apply.js logic. 
+            // (This block is maintained here to show similar loader/validation behaviors
+            // if you wish to merge them with apply.js code logic.)
+		});
+
+		// returning false will be handled in the apply.js file (see below)
+		return false;
+
+	});
+});
 		
 // Jquery validate form visit
 jQuery(document).ready(function(){
